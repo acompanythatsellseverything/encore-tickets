@@ -1,6 +1,6 @@
-
 import CreatingJourneys from "@/app/components/CreatingJourneys";
 import StayAhead from "@/app/components/StayAhead";
+import JoinUs from "@/app/components/JoinUs";
 
 
 
@@ -15,8 +15,8 @@ export default function Home() {
             <main className="bg-beige h-12 w-full flex-1">
                 <CreatingJourneys/>
                 <StayAhead/>
+                <JoinUs/>
             </main>
-            <footer></footer>
         </>
     );
 }
