@@ -1,15 +1,54 @@
 'use client'
 import Box from "@/components/Box";
 import Title from "@/components/Title";
-import React, {useState} from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { MockEvents } from "@/data/MockEvents";
 import ContactModal from "@/components/ContactModal";
 
 const Slider = () => {
-    // scrollbar-hide
+    const sliderRef = useRef(null);
+    const [isDragging, setIsDragging] = useState(false);
+    const [startX, setStartX] = useState(0);
+    const [scrollLeft, setScrollLeft] = useState(0);
+
+    const handleMouseDown = (e: { preventDefault: () => void; pageX: number; }) => {
+        e.preventDefault();
+        setIsDragging(true);
+        // @ts-ignore
+        setStartX(e.pageX - sliderRef.current.offsetLeft);
+        // @ts-ignore
+        setScrollLeft(sliderRef.current.scrollLeft);
+    };
+
+    const handleMouseLeave = () => {
+        setIsDragging(false);
+    };
+
+    const handleMouseUp = () => {
+        setIsDragging(false);
+    };
+
+    const handleMouseMove = (e: { preventDefault: () => void; pageX: number; }) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        // @ts-ignore
+        const x = e.pageX - sliderRef.current.offsetLeft;
+        const walk = (x - startX) * 2;
+        // @ts-ignore
+        sliderRef.current.scrollLeft = scrollLeft - walk;
+    };
+
     return (
-        <div className='relative mt-24 overflow-x-scroll overflow-y-clip'>
+        <div
+            className='relative mt-24 overflow-x-scroll overflow-y-clip scrollbar-hide cursor-grab active:cursor-grabbing select-none'
+            ref={sliderRef}
+            onMouseDown={handleMouseDown}
+            onMouseLeave={handleMouseLeave}
+            onMouseUp={handleMouseUp}
+            onMouseMove={handleMouseMove}
+            onDragStart={(e) => e.preventDefault()}
+        >
             <div className='flex gap-5 relative w-max'>
                 {MockEvents.map((card, i) => (
                     <div className='w-72 h-96 relative overflow-hidden' key={i}>
@@ -18,7 +57,7 @@ const Slider = () => {
                             width={280}
                             height={380}
                             alt={card.title}
-                            className='object-cover hover:scale-110 transition-all duration-500'
+                            className='object-cover hover:scale-110 transition-all duration-500 '
                             layout="responsive"
                         />
                         <div className='absolute bottom-5 left-5 text-white'>
