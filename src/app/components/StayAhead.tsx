@@ -1,9 +1,10 @@
+'use client'
 import Box from "@/components/Box";
 import Title from "@/components/Title";
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 import { MockEvents } from "@/data/MockEvents";
-import Link from "next/link";
+import ContactModal from "@/components/ContactModal";
 
 const Slider = () => {
     // scrollbar-hide
@@ -32,6 +33,16 @@ const Slider = () => {
 };
 
 const StayAhead = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <Box>
             <Title>Stay ahead of the crowd with our<br /> selection of trending events</Title>
@@ -41,11 +52,15 @@ const StayAhead = () => {
             </p>
             <Slider />
             <div className='flex justify-center mt-8'>
-                <Link href='#' className='uppercase bg-inherit border border-black text-xl px-8 py-4'>
-                    contact us
-                </Link>
+                <button
+                    className='uppercase bg-inherit border border-black text-xl px-8 py-4 hover:bg-black hover:text-white transition-all duration-500'
+                    onClick={handleOpenModal}
+                >
+                    Contact Us
+                </button>
             </div>
 
+            <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
         </Box>
     );
 };

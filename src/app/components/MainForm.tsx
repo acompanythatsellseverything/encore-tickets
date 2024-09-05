@@ -103,7 +103,7 @@ const MainForm = () => {
 
             <button
                 type="submit"
-                className="mt-8 bg-black text-white uppercase py-2 px-4 w-1/2"
+                className="mt-8 bg-black text-white uppercase py-2 px-4 w-1/2 hover:bg-gray-300 hover:text-black transition-all duration-500"
             >
                 Submit
             </button>
