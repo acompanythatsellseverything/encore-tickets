@@ -12,6 +12,8 @@ const Footer = () => {
                     <p className='uppercase text-xl'>Follow us social media</p>
                     <nav className='flex-6'>
                         {/*<Link href={}></Link>*/}
+                        {/*<Link href={}></Link>*/}
+
                     </nav>
                 </div>
             </Box>
