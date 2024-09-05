@@ -15,7 +15,7 @@ export default function Home() {
                 {/*    <Image src={'/img/main/hero.png'} alt={'Hero img'} width={1440} height={766} className={'w-full h-auto'}/>*/}
                 {/*</div>*/}
             </header>
-            <main className="bg-beige h-12 w-full flex-1 ">
+            <main className="bg-beige w-full flex-1 ">
                 <CreatingJourneys/>
                 <StayAhead/>
                 <JoinUs/>

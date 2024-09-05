@@ -74,14 +74,6 @@ const Slider = () => {
 const StayAhead = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleOpenModal = () => {
-        setIsModalOpen(true);
-    };
-
-    const handleCloseModal = () => {
-        setIsModalOpen(false);
-    };
-
     return (
         <Box>
             <Title>Stay ahead of the crowd with our<br /> selection of trending events</Title>
@@ -93,13 +85,13 @@ const StayAhead = () => {
             <div className='flex justify-center mt-8'>
                 <button
                     className='uppercase bg-inherit border border-black text-xl px-8 py-4 hover:bg-black hover:text-white transition-all duration-500'
-                    onClick={handleOpenModal}
+                    onClick={() => setIsModalOpen(true)}
                 >
                     Contact Us
                 </button>
             </div>
 
-            <ContactModal isOpen={isModalOpen} onClose={handleCloseModal} />
+            <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </Box>
     );
 };
