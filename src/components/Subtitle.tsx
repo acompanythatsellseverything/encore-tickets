@@ -1,8 +1,8 @@
 import React, {ReactNode} from 'react';
 
-const Subtitle = ({children}:{children: ReactNode}) => {
+const Subtitle = ({children, className}:{children: ReactNode, className?: string}) => {
     return (
-        <h2 className="text-center font-extrabold text-xl -tracking-tighter uppercase">{children}</h2>)
+        <h2 className={`text-center font-extrabold text-xl -tracking-tighter uppercase ${className}`}>{children}</h2>)
 }
 
 export default Subtitle;
