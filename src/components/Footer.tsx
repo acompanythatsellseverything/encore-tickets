@@ -31,10 +31,10 @@ const Footer = () => {
                         <Link href={'tel:3051252288'} className='underline'>
                             (305)&#32;125&#32;22&#32;88
                         </Link>
-                        <Link href={'#'}>
+                        <Link href={'/terms-of-service'}>
                             Terms of services
                         </Link>
-                        <Link href={'#'}>
+                        <Link href={'/privacy-policy'}>
                             Privacy Policy
                         </Link>
                     </nav>
