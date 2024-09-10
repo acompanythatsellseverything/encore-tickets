@@ -10,7 +10,7 @@ const Hero = () => {
             <div className='absolute inset-0 flex flex-col items-center justify-center -tracking-tight'>
                 <h1 className='text-white font-black text-4xl italic uppercase'>Your Access to Elevating
                     Experiences</h1>
-                <button className='py-5 px-6 mt-20 bg-white text-black mix-blend-difference uppercase'>
+                <button className='py-4 px-6 mt-20 bg-white text-black mix-blend-difference uppercase'>
                     Contact Us
                 </button>
             </div>

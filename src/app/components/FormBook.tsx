@@ -1,15 +1,14 @@
 import React from 'react';
 import Image from "next/image";
 import MainForm from "@/app/components/MainForm";
+import Title from "@/components/Title";
 
 const FormBook = () => {
     return (
-        <div className="border border-black flex justify-between max-w-7xl">
-            <div className="m-10 w-1/2 flex flex-col justify-between">
+        <div className="border border-black flex flex-col md:flex-row justify-between max-w-7xl">
+            <div className="m-10 md:w-1/2 flex flex-col justify-between">
                 <div>
-                    <h6 className="font-extrabold text-3xl">
-                        VIP access for premium live events around the World
-                    </h6>
+                    <Title className='text-start'>VIP access for premium live events around the World</Title>
                     <p className="mt-8">
                         If you’re looking to buy tickets for a unique experience, share your preferences,
                         and
@@ -28,7 +27,7 @@ const FormBook = () => {
                 </div>
             </div>
             <span className="border border-dashed border-gray-500"></span>
-            <div className="m-10 w-1/2">
+            <div className="m-10 md:w-1/2">
                 <MainForm/>
             </div>
         </div>
