@@ -5,7 +5,7 @@ import Text from '@/components/Text';
 export const SellTicketTitle = () => {
 	return (
 		<div className='flex flex-col gap-8 justify-between'>
-			<Title className='text-3xl'>Sell Tickets</Title>
+			<Title className='text-xl'>Sell Tickets</Title>
 			<Text className='text-sm'>
 				Got a ticket to an exclusive event you can’t attend?
 				<br />

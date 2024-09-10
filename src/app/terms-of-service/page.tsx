@@ -87,19 +87,19 @@ export default function TermsOfService() {
     return (
         <main className='bg-beige'>
             <Box>
-                <div className='pt-32'>
+                <div className='pt-20 md:pt-32'>
                     <Title>Encore Tickets Terms of Service</Title>
                     <div className='mt-8'>
                         {privacyPolicyInfo.map((section, index) => (
-                            <div key={index} className='mt-20'>
-                                <p className='font-extrabold text-2xl -tracking-tighter uppercase'>{index + 1}. {section.title}</p>
+                            <div key={index} className={`${index && 'mt-20'}`}>
+                                <p className='font-extrabold text-xl md:text-2xl -tracking-tighter uppercase'>{index + 1}. {section.title}</p>
                                 {/* Если есть основной текст, отображаем его */}
-                                {section.txt && <p className='mt-8 text-lg'>{section.txt}</p>}
+                                {section.txt && <p className='mt-8 text-sm md:text-lg'>{section.txt}</p>}
                                 {/* Если есть темы (topics), отображаем их */}
                                 {section.topics && Object.entries(section.topics).map(([topicTitle, topicContent], i) => (
                                     <div key={i} className='mt-8'>
-                                        <p className='text-lg uppercase'>{topicTitle}</p>
-                                        <p className='mt-2 text-lg'>{topicContent}</p>
+                                        <p className='text-base md:text-lg uppercase'>{topicTitle}</p>
+                                        <p className='mt-2.5 text-sm md:text-lg'>{topicContent}</p>
                                     </div>
                                 ))}
                             </div>
