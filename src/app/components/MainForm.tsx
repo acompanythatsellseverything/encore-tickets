@@ -100,13 +100,15 @@ const MainForm = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
             />
+            <div className='flex justify-center md:justify-start'>
+                <button
+                    type="submit"
+                    className="mt-8  bg-black text-white uppercase py-2 px-4 w-1/2 hover:bg-gray-300 hover:text-black transition-all duration-500"
+                >
+                    Submit
+                </button>
+            </div>
 
-            <button
-                type="submit"
-                className="mt-8 bg-black text-white uppercase py-2 px-4 w-1/2 hover:bg-gray-300 hover:text-black transition-all duration-500"
-            >
-                Submit
-            </button>
         </form>
     );
 };

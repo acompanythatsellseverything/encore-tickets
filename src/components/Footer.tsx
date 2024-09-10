@@ -24,17 +24,17 @@ const Footer = () => {
                             <Image src={'/img/icons/x.svg'} width={30} height={30} alt={'X'} />
                         </Link>
                     </nav>
-                    <nav className='flex gap-6 text-xs'>
-                        <Link href={'mailto:info@encoretix.com'} className='underline'>
+                    <nav className='flex gap-6 text-xs justify-center flex-wrap md:flex-nowrap'>
+                        <Link href={'mailto:info@encoretix.com'} className='underline w-1/3 md:w-auto'>
                             info@encoretix.com
                         </Link>
-                        <Link href={'tel:3051252288'} className='underline'>
+                        <Link href={'tel:3051252288'} className='underline w-1/3 md:w-auto'>
                             (305)&#32;125&#32;22&#32;88
                         </Link>
-                        <Link href={'/terms-of-service'}>
+                        <Link href={'/terms-of-service'} className='w-1/3 md:w-auto'>
                             Terms of services
                         </Link>
-                        <Link href={'/privacy-policy'}>
+                        <Link href={'/privacy-policy'} className='w-1/3 md:w-auto'>
                             Privacy Policy
                         </Link>
                     </nav>
