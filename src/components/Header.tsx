@@ -72,7 +72,7 @@ const Header = () => {
                         <button onClick={toggleModal} className="text-white text-xl mb-4 absolute right-4 top-4"><X/></button>
                         <nav className="flex flex-col gap-[70px]">
                             {navLinks.map((link, i) => (
-                                <Link href={link.link} onClick={toggleModal} className='uppercase text-xl'>{link.label}</Link>
+                                <Link href={link.link} onClick={toggleModal} className='uppercase text-xl' key={i}>{link.label}</Link>
                             ))}
                             <div className='flex flex-col gap-14 text-xs'>
                                 <Link href={'mailto:info@encoretix.com'} className='underline'>
