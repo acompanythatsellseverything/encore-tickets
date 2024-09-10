@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export const SellTicketCode = () => {
 	return (
-		<div className=''>
+		<div className='mt-8'>
 			<Image
 				className='m-auto'
 				src={'/img/sell-tickets/code.png'}
