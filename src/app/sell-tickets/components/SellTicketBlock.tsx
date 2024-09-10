@@ -7,7 +7,7 @@ import { Divider } from '@/components/Divider';
 
 export const SellTicketBlock = () => {
 	return (
-		<Box className='flex justify-center py-32'>
+		<Box className='flex justify-center'>
 			<div className='flex flex-col gap-8 w-[570px] py-8 px-4 md:px-9 bg-beige border-2 border-black'>
 				<SellTicketTitle />
 				<Divider/>
