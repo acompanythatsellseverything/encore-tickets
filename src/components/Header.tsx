@@ -78,9 +78,10 @@ const Header = () => {
                                     <Link href={'#'} className={'hidden md:inline-block'}>
                                         <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
                                     </Link>
-                                    <div onClick={() => setIsDropdownOpen(true)}>
+                                    {innerWidth <= 768 && <div onClick={() => setIsDropdownOpen(true)}>
                                         <Image src={'/img/icons/plus.svg'} width={24} height={24} alt={''}/>
-                                    </div>
+                                    </div>}
+
                                 </>
                             }
                         </nav>
