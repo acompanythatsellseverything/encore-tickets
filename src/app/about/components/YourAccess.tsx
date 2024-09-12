@@ -7,7 +7,7 @@ const YourAccess = () => {
         <Box>
             <div className='pt-32'>
                 <Title>Encore tickets Your Access to<br/> Unforgettable Moments</Title>
-                <div className='mt-7 w-1/2 mx-auto'>
+                <div className='mt-7  md:w-1/2 mx-4 md:mx-auto'>
                     <p className='text-lg'>
                         At EncoreTix, we specialize in providing unparalleled access to the world’s
                         most sought-after events and experiences. From exclusive concerts and VIP
