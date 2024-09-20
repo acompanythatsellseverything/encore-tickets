@@ -1,7 +1,9 @@
+'use client'
 import React from 'react';
 import Subtitle from "@/components/Subtitle";
 import Image from "next/image";
 import Box from "@/components/Box";
+import { motion } from 'framer-motion';
 
 interface IService {
     icon: string
@@ -41,22 +43,29 @@ const OurServices = () => {
 
     return (
         <Box>
-            <Subtitle>Our Services</Subtitle>
-            <div className='flex flex-wrap gap-10 justify-center mt-8 md:mt-20'>
-                {services.map((card, i) => (
-                    <div className='lg:w-[30%]' key={i}>
-                        <div className='flex flex-col md:flex-row gap-5 justify-center items-center md:justify-start md:items-start'>
-                            {/*@ts-ignore*/}
-                            <Image src={card.icon} alt={card.title} width={55} height={35} className='w-[94px] h-[43px] md:w-[55px] md:h-[35px] md:mt-[4px]'/>
-                            <h5 className='text-lg md:text-2xl md:font-semibold uppercase'>{card.title}</h5>
+            <motion.div
+                initial={{ opacity: 0, x: 200 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
+                viewport={{ once: true, amount: 0.05 }}
+            >
+                <Subtitle>Our Services</Subtitle>
+                <div className='flex flex-wrap gap-10 justify-center mt-8 md:mt-20'>
+                    {services.map((card, i) => (
+                        <div className='lg:w-[30%]' key={i}>
+                            <div className='flex flex-col md:flex-row gap-5 justify-center items-center md:justify-start md:items-start'>
+                                {/*@ts-ignore*/}
+                                <Image src={card.icon} alt={card.title} width={55} height={35} className='w-[94px] h-[43px] md:w-[55px] md:h-[35px] md:mt-[4px]'/>
+                                <h5 className='text-lg md:text-2xl md:font-semibold uppercase'>{card.title}</h5>
+                            </div>
+                            <hr className='w-full border border-dashed border-gray-500 my-6'/>
+                            <p className='text-sm md:text-xl'>
+                                {card.txt}
+                            </p>
                         </div>
-                        <hr className='w-full border border-dashed border-gray-500 my-6'/>
-                        <p className='text-sm md:text-xl'>
-                            {card.txt}
-                        </p>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </motion.div>
         </Box>
     );
 };
