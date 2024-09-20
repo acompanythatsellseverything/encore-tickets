@@ -3,10 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Support from "@/components/Support";
-import Header from "@/components/Header";
+import dynamic from "next/dynamic";
+// import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
-
+const Header = dynamic(() => import('@/components/Header'), { ssr: false });
 export const metadata: Metadata = {
   title: "Encore Tickets",
   description: "Encore Tickets",

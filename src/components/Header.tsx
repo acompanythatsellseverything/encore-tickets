@@ -11,20 +11,24 @@ const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const innerWidth = useWindowInnerWidth();
+
     useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50 && window.innerWidth >= 768) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
+        if(typeof window !== 'undefined'){
+            const handleScroll = () => {
+                if (window.scrollY > 50 && window.innerWidth >= 768) {
+                    setIsScrolled(true);
+                } else {
+                    setIsScrolled(false);
+                }
+            };
 
-        window.addEventListener('scroll', handleScroll);
+            window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        }
+
     }, []);
 
     // Toggle modal visibility
