@@ -5,7 +5,7 @@ export const SellTicketCode = () => {
 		<div className='mt-8'>
 			<Image
 				className='m-auto'
-				src={'/img/sell-tickets/code.png'}
+				src={'/img/main/qr-code.png'}
 				alt='code'
 				width={300}
 				height={45}

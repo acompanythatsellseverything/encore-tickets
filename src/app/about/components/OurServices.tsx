@@ -50,7 +50,7 @@ const OurServices = () => {
                 viewport={{ once: true, amount: 0.05 }}
             >
                 <Subtitle>Our Services</Subtitle>
-                <div className='flex flex-wrap gap-10 justify-center mt-8 md:mt-20'>
+                <div className='flex flex-wrap gap-10 justify-center mt-8 md:mt-20 text-secondary'>
                     {services.map((card, i) => (
                         <div className='lg:w-[30%]' key={i}>
                             <div className='flex flex-col md:flex-row gap-5 justify-center items-center md:justify-start md:items-start'>

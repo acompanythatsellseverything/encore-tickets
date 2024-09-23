@@ -109,7 +109,7 @@ const Header = () => {
             {/* Modal Menu */}
             {isModalOpen && (
                 <div className="fixed top-0 right-0 w-full h-full px-3 py-2 md:p-0 md:h-fit md:mr-20 md:mt-2  z-50 flex justify-end">
-                    <div className="bg-black h-full px-10 md:px-20 py-14 max-w-[480px] w-full text-white bg-opacity-90 md:bg-opacity-100">
+                    <div className="bg-secondary h-full px-10 md:px-20 py-14 max-w-[480px] w-full text-white bg-opacity-90 md:bg-opacity-100">
                         <button onClick={toggleModal} className="text-white text-xl mb-4 absolute right-4 top-4"><X/></button>
                         <nav className="flex flex-col gap-[60px] md:gap-[70px]">
                             {navLinks.map((link, i) => (

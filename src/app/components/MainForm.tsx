@@ -30,14 +30,14 @@ const MainForm = () => {
     });
 
     return (
-        <form onSubmit={formik.handleSubmit}>
+        <form onSubmit={formik.handleSubmit} className='text-secondary'>
             <label className="uppercase text-sm flex items-center gap-1" htmlFor="firstName">
                 first name <span className="lowercase text-xs text-gray-500">(required)</span>
             </label>
             <input
                 id="firstName"
                 name="firstName"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.firstName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -52,7 +52,7 @@ const MainForm = () => {
             <input
                 id="lastName"
                 name="lastName"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.lastName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -68,7 +68,7 @@ const MainForm = () => {
                 id="email"
                 name="email"
                 type="email"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -83,7 +83,7 @@ const MainForm = () => {
             <input
                 id="phone"
                 name="phone"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -95,7 +95,7 @@ const MainForm = () => {
             <textarea
                 id="message"
                 name="message"
-                className="w-full bg-inherit border-b border-black h-auto focus:outline-0"
+                className="w-full bg-inherit border-b border-secondary h-auto focus:outline-0"
                 value={formik.values.message}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -103,7 +103,7 @@ const MainForm = () => {
             <div className='flex justify-center md:justify-start'>
                 <button
                     type="submit"
-                    className="mt-8  bg-black text-white uppercase py-2 px-4 w-1/2 hover:bg-gray-300 hover:text-black transition-all duration-500"
+                    className="mt-8  bg-secondary text-white uppercase py-2 px-4 w-1/2 hover:bg-gray-300 hover:text-secondary transition-all duration-500"
                 >
                     Submit
                 </button>

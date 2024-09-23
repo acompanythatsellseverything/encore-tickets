@@ -11,7 +11,7 @@ const Hero = () => {
                 <h1 className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>
                     Your Access to Elevating
                     Experiences</h1>
-                <button className='py-4 px-6 mt-20 bg-white text-sm md:text-base text-black mix-blend-difference uppercase'>
+                <button className='py-4 px-6 mt-20 bg-white text-sm md:text-base text-secondary mix-blend-difference uppercase'>
                     Contact Us
                 </button>
             </div>
