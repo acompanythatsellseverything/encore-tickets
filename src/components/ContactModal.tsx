@@ -40,8 +40,8 @@ const ContactModal: React.FC<ContactModalProps>= ({ isOpen, onClose }) => {
             onClick={handleOverlayClick}
         >
             <motion.div
-                initial={{ opacity: 0, x: -300 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 300 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
                 viewport={{ once: true, amount: 0.05 }}
                 className="bg-beige w-fit max-h-[90vh] md:max-h-fit overflow-y-scroll z-50 scrollbar-hide"
