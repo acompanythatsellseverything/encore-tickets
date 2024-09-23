@@ -8,7 +8,11 @@ import ContactModal from "@/components/ContactModal";
 import { motion } from "framer-motion";
 import Text from "@/components/Text";
 
-const Slider = () => {
+interface ISliderProps {
+    setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Slider:React.FC<ISliderProps> = ({setIsModalOpen}) => {
     const sliderRef = useRef(null);
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
@@ -56,6 +60,7 @@ const Slider = () => {
                     <div
                         className='w-72 h-96 relative overflow-hidden'
                         key={i}
+                        onClick={() => setIsModalOpen(true)}
                     >
                         <Image
                             src={card.img}
@@ -80,7 +85,7 @@ const StayAhead = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
-        <Box>
+        <Box className='relative'>
             <motion.div
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -92,7 +97,7 @@ const StayAhead = () => {
                      From the hottest concerts and must-see theater shows to thrilling sports matches
                      and exclusive festivals, these are the events everyone is talking about.
                  </Text>
-                 <Slider />
+                 <Slider setIsModalOpen={setIsModalOpen}/>
                  <div className='flex justify-center mt-16 md:mt-8'>
                      <button
                          className='uppercase bg-inherit border border-secondary text-sm md:text-xl px-8 py-4 hover:bg-secondary hover:text-white transition-all duration-500'

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import FormBook from "@/app/components/FormBook";
+import {motion} from "framer-motion";
 
 interface ContactModalProps {
     isOpen: boolean;
@@ -35,15 +36,19 @@ const ContactModal: React.FC<ContactModalProps>= ({ isOpen, onClose }) => {
 
     return (
         <div
-            className="fixed inset-0 bg-secondary bg-opacity-50 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-secondary bg-opacity-50 flex items-center justify-center px-4 z-50"
             onClick={handleOverlayClick}
         >
-            <div
-                className="bg-beige  w-fit"
+            <motion.div
+                initial={{ opacity: 0, x: -300 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
+                viewport={{ once: true, amount: 0.05 }}
+                className="bg-beige w-fit max-h-[90vh] md:max-h-fit overflow-y-scroll z-50 scrollbar-hide"
                 onClick={handleModalClick}
             >
                <FormBook/>
-            </div>
+            </motion.div>
         </div>
     );
 };
