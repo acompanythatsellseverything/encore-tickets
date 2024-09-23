@@ -12,9 +12,12 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "sell-tickets-mob": "url('/img/sell-tickets/hero-mobile.png')"
       },
       colors: {
         beige: '#F6F2EB',
+        focus: '#e5e2dd',
+        secondary: '#001942'
       },
     },
   },

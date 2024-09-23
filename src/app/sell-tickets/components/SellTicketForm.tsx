@@ -38,7 +38,7 @@ const SellTicketForm = () => {
             <input
                 id="firstName"
                 name="firstName"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
                 value={formik.values.firstName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -53,7 +53,7 @@ const SellTicketForm = () => {
             <input
                 id="lastName"
                 name="lastName"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
                 value={formik.values.lastName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -69,7 +69,7 @@ const SellTicketForm = () => {
                 id="email"
                 name="email"
                 type="email"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -84,7 +84,7 @@ const SellTicketForm = () => {
             <input
                 id="phone"
                 name="phone"
-                className="w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -96,7 +96,7 @@ const SellTicketForm = () => {
             <textarea
                 id="message"
                 name="message"
-                className="w-full bg-inherit border-b border-black h-auto focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black h-auto focus:outline-0"
                 value={formik.values.message}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}

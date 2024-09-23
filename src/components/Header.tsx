@@ -113,21 +113,21 @@ const Header = () => {
                         <button onClick={toggleModal} className="text-white text-xl mb-4 absolute right-4 top-4"><X/></button>
                         <nav className="flex flex-col gap-[60px] md:gap-[70px]">
                             {navLinks.map((link, i) => (
-                                <Link href={link.link} onClick={toggleModal} className='uppercase text-xl' key={i}>{link.label}</Link>
+                                <Link href={link.link} onClick={toggleModal} className='uppercase text-sm md:text-xl' key={i}>{link.label}</Link>
                             ))}
                             <div className='flex flex-col gap-14 text-xs'>
-                                <Link href={'mailto:info@encoretix.com'} className='underline'>
+                                <Link onClick={toggleModal} href={'mailto:info@encoretix.com'} className='underline'>
                                     info@encoretix.com
                                 </Link>
-                                <Link href={'tel:3051252288'} className='underline'>
+                                <Link onClick={toggleModal} href={'tel:3051252288'} className='underline'>
                                     (305)&#32;125&#32;22&#32;88
                                 </Link>
                             </div>
                             <div className='flex flex-col gap-9 text-xs'>
-                                <Link href={'/terms-of-service'}>
+                                <Link onClick={toggleModal} href={'/terms-of-service'}>
                                     Terms of services
                                 </Link>
-                                <Link href={'/privacy-policy'}>
+                                <Link onClick={toggleModal} href={'/privacy-policy'}>
                                     Privacy Policy
                                 </Link>
                             </div>
