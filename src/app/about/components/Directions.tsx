@@ -1,9 +1,10 @@
 'use client'
-import React from 'react';
+import React, {useState} from 'react';
 import Box from "@/components/Box";
 import Subtitle from "@/components/Subtitle";
 import Image from "next/image";
 import { motion } from 'framer-motion';
+import ContactModal from "@/components/ContactModal";
 
 const directionsMockData = [
     {
@@ -33,6 +34,8 @@ const directionsMockData = [
 ]
 
 const Directions = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <Box>
             <motion.div
@@ -44,7 +47,7 @@ const Directions = () => {
                 <Subtitle>Directions</Subtitle>
                 <div className='flex gap-2.5 md:gap-10 flex-wrap mt-8 md:mt-20'>
                     {directionsMockData.map((card, i) => (
-                        <div className='w-full h-[200px] md:w-[400px] md:h-96 relative overflow-hidden cursor-pointer' key={i}>
+                        <div className='w-full h-[200px] md:w-[400px] md:h-96 relative overflow-hidden cursor-pointer' key={i} onClick={() => setIsModalOpen(true)}>
                             <Image
                                 src={card.img}
                                 width={280}
@@ -60,7 +63,7 @@ const Directions = () => {
                     ))}
                 </div>
             </motion.div>
-
+            <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </Box>
     );
 };
