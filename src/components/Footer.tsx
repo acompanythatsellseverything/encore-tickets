@@ -6,10 +6,10 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer className='bg-beige'>
-            <Box>
+            <Box className='text-secondary'>
                 <div className='flex flex-col gap-14 items-center'>
                     <Image src={'/img/icons/small-logo.svg'} alt='logo' width={43} height={50}/>
-                    <p className='uppercase text-xl'>Follow us social media</p>
+                    <p className='uppercase text-xl text-secondary'>Follow us social media</p>
                     <nav className='flex gap-6'>
                         <Link href={'#'}>
                             <Image src={'/img/icons/facebook.svg'} width={30} height={30} alt={'Facebook'} />

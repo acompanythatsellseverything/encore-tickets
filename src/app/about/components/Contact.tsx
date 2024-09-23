@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ContactModal from "@/components/ContactModal";
 import { motion } from 'framer-motion';
+import Text from "@/components/Text";
 
 const Contact = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,9 +21,9 @@ const Contact = () => {
                 >
                     <Subtitle>Contact</Subtitle>
                     <div className='mt-20 text-center' >
-                        <p className='uppercase'>call</p>
+                        <Text className='uppercase'>call</Text>
                         <div className='flex flex-col gap-2 mt-5'>
-                            <nav className='flex gap-5 w-fit mx-auto'>
+                            <nav className='flex gap-5 w-fit mx-auto text-secondary'>
                                 <Link href={'#'}>
                                     <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>
                                 </Link>
@@ -33,17 +34,17 @@ const Contact = () => {
                                     <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
                                 </Link>
                             </nav>
-                            <Link href={'tel:3051252288'} className='underline font-bold'>
+                            <Link href={'tel:3051252288'} className='underline font-bold text-secondary'>
                                 (305)&#32;125&#32;22&#32;88
                             </Link>
                         </div>
-                        <p className='uppercase mt-20'>email</p>
-                        <Link href={'mailto:info@encoretix.com'} className='underline font-bold mt-5'>
+                        <Text className='uppercase mt-20'>email</Text>
+                        <Link href={'mailto:info@encoretix.com'} className='underline font-bold mt-5 text-secondary'>
                             info@encoretix.com
                         </Link>
                         <div className='flex justify-center mt-20'>
                             <button
-                                className='uppercase bg-inherit border border-black text-xl px-8 py-4 hover:bg-black hover:text-white transition-all duration-500'
+                                className='text-secondary uppercase bg-inherit border border-secondary text-xl px-8 py-4 hover:bg-secondary hover:text-white transition-all duration-500'
                                 onClick={() => setIsModalOpen(true)}
                             >
                                 Contact Us

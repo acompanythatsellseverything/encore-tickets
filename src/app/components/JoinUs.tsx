@@ -19,7 +19,7 @@ const JoinUsMobile = () => {
                 </div>
                 <div className='grid grid-cols-2 grid-rows-2 gap-5'>
                     <div className='my-auto text-xl flex items-center gap-3'>
-                        <p className='mt-2'>Follow for more</p>
+                        <p className='mt-2 text-secondary'>Follow for more</p>
                         <ArrowUpRight color={'#000'} size={32} strokeWidth={1.5}/>
                     </div>
                     <Image src={'/img/main/gallery/Photo_5.png'} width={418} height={418} alt={'Image'}/>
@@ -50,9 +50,9 @@ const JoinUs = () => {
                     <div className='w-1/3 flex flex-col gap-5 justify-between'>
                         <div className='flex justify-between flex-col h-full'>
                             <Title>Join us on Instagram</Title>
-                            <div className='my-auto text-xl flex items-center gap-4'><p>Follow for more</p>
+                            <div className='my-auto text-xl flex items-center gap-4 text-secondary'><p>Follow for more</p>
                                 <ArrowUpRight
-                                    color={'#000'} size={32} strokeWidth={1.5}/></div>
+                                    color={'#001942'} size={32} strokeWidth={1.5}/></div>
                         </div>
                         <div className='grid grid-cols-2 grid-rows-2 gap-5'>
                             <Image src={'/img/main/gallery/Photo_1.png'} width={400} height={400} alt={'Image'}/>

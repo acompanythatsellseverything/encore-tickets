@@ -31,14 +31,14 @@ const SellTicketForm = () => {
     });
 
     return (
-        <form onSubmit={formik.handleSubmit} className="flex-col items-center mt-8">
+        <form onSubmit={formik.handleSubmit} className="flex-col items-center mt-8 text-secondary">
             <label className="uppercase text-sm flex items-center" htmlFor="firstName">
                 first name <span className="lowercase text-xs text-gray-500">(required)</span>
             </label>
             <input
                 id="firstName"
                 name="firstName"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.firstName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -53,7 +53,7 @@ const SellTicketForm = () => {
             <input
                 id="lastName"
                 name="lastName"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.lastName}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -69,7 +69,7 @@ const SellTicketForm = () => {
                 id="email"
                 name="email"
                 type="email"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -84,7 +84,7 @@ const SellTicketForm = () => {
             <input
                 id="phone"
                 name="phone"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
                 value={formik.values.phone}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -96,7 +96,7 @@ const SellTicketForm = () => {
             <textarea
                 id="message"
                 name="message"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-black h-auto focus:outline-0"
+                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary h-auto focus:outline-0"
                 value={formik.values.message}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -105,7 +105,7 @@ const SellTicketForm = () => {
             <div className="w-full flex justify-center">
                 <button
                         type="submit"
-                        className="mt-8 bg-black text-white uppercase py-5 px-20 md:px-32  text-sm md:text-xl hover:bg-gray-300 hover:text-black transition-all duration-500"
+                        className="mt-8 bg-secondary text-white uppercase py-5 px-20 md:px-32  text-sm md:text-xl hover:bg-gray-300 hover:text-secondary transition-all duration-500"
                         >
                         Submit
                 </button>
