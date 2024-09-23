@@ -16,7 +16,7 @@ export const SellTicketBlock = () => {
 				transition={{duration: 0.7, type: "spring", stiffness: 50}}
 				viewport={{once: true, amount: 0.05}}
 			>
-				<div className='flex flex-col gap-8 w-[570px] py-8 px-4 md:px-9 bg-beige border-2 border-black'>
+				<div className='flex flex-col gap-8 md:w-[570px] py-8 px-4 md:px-9 bg-beige border-2 border-black'>
 					<SellTicketTitle/>
 					<Divider/>
 					<div className=''>
