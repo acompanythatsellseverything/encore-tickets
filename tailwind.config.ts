@@ -17,7 +17,9 @@ const config: Config = {
       colors: {
         beige: '#F6F2EB',
         focus: '#e5e2dd',
-        secondary: '#001942'
+        secondary: '#001942',
+        error: '#9F2532',
+        errorBg: '#dec5c8'
       },
     },
   },
