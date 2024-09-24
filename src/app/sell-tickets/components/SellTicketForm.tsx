@@ -1,12 +1,14 @@
 'use client'
 import {useFormik} from "formik";
 import * as Yup from "yup";
+import { Input } from "@/components/Input";
+import { TextArea } from "@/components/TextArea";
 
 const validationSchema = Yup.object().shape({
     firstName: Yup.string().required("First name is required"),
     lastName: Yup.string().required("Last name is required"),
     email: Yup.string().email("Invalid email address").required("Email is required"),
-    phone: Yup.string().optional(),
+    phone: Yup.string(),
     message: Yup.string().optional(),
 });
 
@@ -32,80 +34,62 @@ const SellTicketForm = () => {
 
     return (
         <form onSubmit={formik.handleSubmit} className="flex-col items-center mt-8 text-secondary">
-            <label className="uppercase text-sm flex items-center" htmlFor="firstName">
-                first name <span className="lowercase text-xs text-gray-500">(required)</span>
-            </label>
-            <input
+            <Input 
                 id="firstName"
                 name="firstName"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
-                value={formik.values.firstName}
+                label="first name"
+                required 
+                value={formik.values.firstName} 
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
+                error={formik.touched.firstName && formik.errors.firstName}
             />
-            {formik.touched.firstName && formik.errors.firstName ? (
-                <div className="text-red-500 text-xs mt-1">{formik.errors.firstName}</div>
-            ) : null}
-
-            <label className="uppercase text-sm flex items-center gap-1 mt-8" htmlFor="lastName">
-                last name <span className="lowercase text-xs text-gray-500">(required)</span>
-            </label>
-            <input
+            
+            <Input 
                 id="lastName"
                 name="lastName"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
-                value={formik.values.lastName}
+                label="last name"
+                required 
+                value={formik.values.lastName} 
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
+                error={formik.touched.lastName && formik.errors.lastName}
             />
-            {formik.touched.lastName && formik.errors.lastName ? (
-                <div className="text-red-500 text-xs mt-1">{formik.errors.lastName}</div>
-            ) : null}
 
-            <label className="uppercase text-sm flex items-center gap-1 mt-8" htmlFor="email">
-                email <span className="lowercase text-xs text-gray-500">(required)</span>
-            </label>
-            <input
+            <Input 
                 id="email"
                 name="email"
+                label="email"
                 type="email"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
-                value={formik.values.email}
+                required 
+                value={formik.values.email} 
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
+                error={formik.touched.email && formik.errors.email}
             />
-            {formik.touched.email && formik.errors.email ? (
-                <div className="text-red-500 text-xs mt-1">{formik.errors.email}</div>
-            ) : null}
-
-            <label className="uppercase text-sm flex items-center gap-1 mt-8" htmlFor="phone">
-                phone
-            </label>
-            <input
+            
+            <Input 
                 id="phone"
                 name="phone"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary focus:outline-0"
-                value={formik.values.phone}
+                label="phone"
+                value={formik.values.phone} 
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
+                error={formik.touched.phone && formik.errors.phone}
             />
-
-            <label className="uppercase text-sm flex items-center gap-1 mt-8" htmlFor="message">
-                message
-            </label>
-            <textarea
+            
+            <TextArea      
                 id="message"
                 name="message"
-                className="mt-1 py-1 hover:bg-focus w-full bg-inherit border-b border-secondary h-auto focus:outline-0"
+                label="message"
                 value={formik.values.message}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
             />
-
             <div className="w-full flex justify-center">
                 <button
                         type="submit"
-                        className="mt-8 bg-secondary text-white uppercase py-5 px-20 md:px-32  text-sm md:text-xl hover:bg-gray-300 hover:text-secondary transition-all duration-500"
+                        className="mt-8 bg-secondary text-white uppercase py-5 px-20 md:px-32  text-sm md:text-xl hover:bg-button-hover hover:text-secondary transition-all duration-500"
                         >
                         Submit
                 </button>
