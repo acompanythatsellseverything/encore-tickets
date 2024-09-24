@@ -29,8 +29,8 @@ export const Input = (props: IProps) => {
 				)}
 			</label>
 			<div
-				className={`mt-2.5 py-1.5 px-2 flex hover:bg-focus focus:bg-focus  w-full bg-inherit border-b border-secondary ${
-					props.error && 'hover:bg-errorBg bg-errorBg border-error'
+				className={`group mt-2.5 py-1.5 px-2 flex hover:bg-focus focus-within:bg-focus w-full bg-inherit border-b border-[#b8bbc0] focus-within:border-secondary hover:border-secondary transition-colors duration-300 ${
+					props.error && 'hover:bg-errorBg focus-within:bg-errorBg bg-errorBg border-error'
 				}`}
 			>
 				<input
