@@ -43,8 +43,8 @@ export const Input = (props: IProps) => {
 					onBlur={props.onBlur}
 				/>
 				{props.error && (
-					<div className='flex-grow basis-full flex justify-end gap-2 items-center text-right text-sm text-error'>
-						{props.error}
+					<div className='flex-grow min-w-44 basis-full flex justify-end gap-2 items-center text-right text-sm text-error'>
+						<span className='flex-grow w-full'>{props.error}</span>
 						<Image src='/img/icons/error.svg' alt='' width={17} height={17} />
 					</div>
 				)}
