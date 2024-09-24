@@ -89,7 +89,7 @@ const MainForm = () => {
             <div className='flex justify-center md:justify-start'>
                 <button
                     type="submit"
-                    className="mt-8  bg-secondary text-white uppercase py-2 px-4 w-1/2 hover:bg-gray-300 hover:text-secondary transition-all duration-500"
+                    className="mt-8  bg-secondary text-white uppercase py-2 px-4 w-1/2 hover:bg-button-hover hover:text-secondary transition-all duration-500"
                 >
                     Submit
                 </button>

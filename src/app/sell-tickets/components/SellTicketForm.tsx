@@ -89,7 +89,7 @@ const SellTicketForm = () => {
             <div className="w-full flex justify-center">
                 <button
                         type="submit"
-                        className="mt-8 bg-secondary text-white uppercase py-5 px-20 md:px-32  text-sm md:text-xl hover:bg-gray-300 hover:text-secondary transition-all duration-500"
+                        className="mt-8 bg-secondary text-white uppercase py-5 px-20 md:px-32  text-sm md:text-xl hover:bg-button-hover hover:text-secondary transition-all duration-500"
                         >
                         Submit
                 </button>

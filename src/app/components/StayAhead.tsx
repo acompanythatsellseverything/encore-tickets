@@ -100,7 +100,7 @@ const StayAhead = () => {
                  <Slider setIsModalOpen={setIsModalOpen}/>
                  <div className='flex justify-center mt-16 md:mt-8'>
                      <button
-                         className='uppercase bg-inherit border border-secondary text-sm md:text-xl px-8 py-4 hover:bg-secondary hover:text-white transition-all duration-500'
+                         className='uppercase bg-inherit border border-secondary text-sm text-secondary md:text-xl px-8 py-4 hover:bg-secondary hover:text-white transition-all duration-500'
                          onClick={() => setIsModalOpen(true)}
                      >
                          Contact Us
