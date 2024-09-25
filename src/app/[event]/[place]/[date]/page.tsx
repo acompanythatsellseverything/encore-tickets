@@ -6,7 +6,7 @@ import Hero from '@/app/components/Hero';
 
 // or Dynamic metadata
 export async function generateMetadata({ params }: { params: any }) {
-    console.log(params)
+	console.log(params)
 	return {
 		title: 'Test metadata',
         description: 'Test description'
