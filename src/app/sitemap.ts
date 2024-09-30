@@ -10,12 +10,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const { data } = await res.json();
 
-    const urls = data.map((article: any) => ({
-        url: `https://encore-tickets.com/${article.slug}`,
-        lastModified: new Date(article.updatedAt),
-        changeFrequency: 'monthly',
-        priority: 0.8,
-    }));
+    const urls = data.map((article: any) => {
+        const word = article.slug.split('-')[0]
+        const shortUrl = word.charAt(0).toUpperCase() + word.slice(1)
+
+        return {
+            url: `https://encore-tickets.com/${shortUrl}/1/1`,
+            lastModified: new Date(article.updatedAt),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        };
+    });
 
     const staticUrls = [
         {
