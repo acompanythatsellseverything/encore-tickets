@@ -4,20 +4,37 @@ import Image from 'next/image';
 interface IProps {
 	title?: string;
 	image?: string;
+	element?: any
 }
 const Hero = (props: IProps) => {
 	return (
 		<div className='relative'>
-			{props.image ? (
-					<Image
-						src={props.image}
-						alt={'Hero img'}
-						width={1440}
-						height={766}
-						className={'w-full h-[600px] md:h-screen'}
-					/>
-				)
-				: <div>
+			{props.element && (
+				(props.element.cover.ext === '.mp4' || props.element.cover.ext === '.mpeg' || props.element.cover.ext === '.quicktime' ) ?
+						<div>
+							<video
+								width="100%"
+								height="600px"
+								autoPlay
+								muted
+								loop
+								className="h-[600px] md:h-screen object-cover"
+							>
+								<source src={`${process.env.API_URL}${props.element.cover.url}`} type="video/mp4"/>
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						: <Image
+							src={`${process.env.API_URL}${props.element.cover.url}`}
+							alt={'Hero img'}
+							width={1440}
+							height={766}
+							className={'w-full h-[600px] md:h-screen'}
+						/>
+
+			) }
+			{!props.element && (
+				<div>
 					<video
 						width="100%"
 						height="600px"
@@ -30,7 +47,7 @@ const Hero = (props: IProps) => {
 						Your browser does not support the video tag.
 					</video>
 				</div>
-			}
+			)}
 			<div className='absolute inset-0 flex flex-col items-center justify-center -tracking-tight'>
 				<h1 className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>
 					{props.title}

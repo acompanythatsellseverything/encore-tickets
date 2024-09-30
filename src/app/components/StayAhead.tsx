@@ -69,9 +69,9 @@ const Slider: React.FC<ISliderProps> = ({ setIsModalOpen, data, apiUrl }) => {
 						key={i}
 						onClick={() => setIsModalOpen(true)}
 					>
-						{card?.cover?.url ? (
+						{card?.stay_ahead?.url ? (
 								<Image
-									src={`${apiUrl}${card.cover.url}`}
+									src={`${apiUrl}${card.stay_ahead.url}`}
 									alt={card.title}
 									layout="fill"
 									objectFit="cover"
@@ -106,9 +106,11 @@ interface IProps {
 	apiUrl?: string
 }
 
+
+
 const StayAhead = ({ data, apiUrl }: IProps) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
-	console.log('Data', data)
+	// console.log('Data', data)
 	return (
 		<Box className='relative'>
 			<motion.div

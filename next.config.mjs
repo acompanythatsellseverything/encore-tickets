@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-    domains: [process.env.API_DOMAIN],
+        domains: ['051b-46-201-91-62.ngrok-free.app'],
   },
 };
 
