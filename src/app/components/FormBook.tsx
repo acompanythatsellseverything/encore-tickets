@@ -10,7 +10,7 @@ const FormBook = () => {
             <div className="mx-4 my-8 md:my-10 md:mx-10 md:w-1/2 flex flex-col justify-between">
                 <div>
                     <Title className='md:text-start'>VIP access for premium live events around the World</Title>
-                    <Text className="mt-10 md:mt-8 text-sm md:text-base">
+                    <Text className="mt-10 md:mt-8 ">
                         If you’re looking to buy tickets for a unique experience, share your preferences,
                         and
                         Encore Tickets will help make it happen. Just fill out the form, and our team will
