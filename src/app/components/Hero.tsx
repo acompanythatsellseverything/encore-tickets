@@ -10,7 +10,7 @@ const Hero = (props: IProps) => {
 	return (
 		<div className='relative'>
 			{props.element && (
-				(props.element.cover.ext === '.mp4' || props.element.cover.ext === '.mpeg' || props.element.cover.ext === '.quicktime' ) ?
+				(props.element.cover.ext === '.mp4' || props.element.cover.ext === '.mpeg' || props.element.cover.ext === '.quicktime' || props.element.cover.ext === '.wmv' || props.element.cover.ext === '.avi'  || props.element.cover.ext === '.flv' ) ?
 						<div>
 							<video
 								width="100%"
@@ -50,7 +50,7 @@ const Hero = (props: IProps) => {
 			)}
 			<div className='absolute inset-0 flex flex-col items-center justify-center -tracking-tight'>
 				<h1 className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>
-					{props.title}
+					{props.title ? props.title : "Your Access to Elevating Experiences"}
 				</h1>
 				<button
 					className='py-4 px-6 mt-20 bg-white text-sm md:text-base text-secondary mix-blend-difference uppercase'>

@@ -9,7 +9,7 @@ import {MockEvents} from "@/data/MockEvents";
 export async function generateMetadata({ params }: { params: any }) {
 
 	const res = await fetch(
-		`${process.env.API_URL}/api/articles?filters[title][$contains]=${params.event}&populate=*`,
+		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&populate=*`,
 		{
 			method: 'GET',
 			headers: {
@@ -33,7 +33,7 @@ export default async function Home({ params }: { params: any }) {
 
 	// Fetch some event
 	const res = await fetch(
-		`${process.env.API_URL}/api/articles?filters[title][$contains]=${params.event}&populate=*`,
+		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&populate=*`,
 		{
 			method: 'GET',
 			cache: "no-cache",
