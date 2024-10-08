@@ -57,8 +57,8 @@ const Hero = (props: IProps) => {
 						<h1 className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>
 							{props.title ? props.title : "Your Access to Elevating Experiences"}
 						</h1>
-						{props.element && <p>{props.element.city}</p>}
-						{props.element && <p>{props.element.date}</p>}
+						{props.element && <p className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>{props.element.city}</p>}
+						{props.element && <p className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>{props.element.date}</p>}
 					</div>
 
 					<button
