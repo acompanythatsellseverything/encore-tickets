@@ -53,12 +53,12 @@ const Hero = (props: IProps) => {
 					</div>
 				)}
 				<div className='absolute inset-0 flex flex-col items-center justify-center -tracking-tight'>
-					<div className='flex w-full flex-col gap-2'>
+					<div className='flex w-full flex-col gap-2 justify-center items-center'>
 						<h1 className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>
 							{props.title ? props.title : "Your Access to Elevating Experiences"}
 						</h1>
-						{props.element && <p className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>{props.element.city}</p>}
-						{props.element && <p className='text-white font-black text-2xl md:text-4xl italic uppercase text-center'>{props.element.date}</p>}
+						{props.element && <p className='text-white font-black text-xl md:text-2xl italic uppercase'>{props.element.city}</p>}
+						{props.element && <p className='text-white font-black text-xl md:text-2xl italic uppercase'>{props.element.date}</p>}
 					</div>
 
 					<button
