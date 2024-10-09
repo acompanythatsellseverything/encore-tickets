@@ -12,6 +12,7 @@ export async function generateMetadata({ params }: { params: any }) {
 		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&populate=*`,
 		{
 			method: 'GET',
+			cache: "no-cache",
 			headers: {
 				'Content-Type': 'application/json',
 				Authorization: process.env.API_TOKEN!,
@@ -48,11 +49,11 @@ export default async function Home({ params }: { params: any }) {
 	const data = await res.json();
 	// console.log('Data - ', data)
 	const element = data.data[0];
-	console.log('Element - ', element)
+	// console.log('Element - ', element)
 
 	// Fetch all events from this category
 	const resStay = await fetch(
-		`${process.env.API_URL}/api/articles?filters[event_type][id]=${element.event_type.id}&filters[id][$ne]=${element.id}&populate=*`,
+		`${process.env.API_URL}/api/articles?filters[event_type][id]=${element.event_type.id}&filters[id][$ne]=${element.id}&filters[title][$ne]=${element.title}&populate=*`,
 		{
 			method: 'GET',
 			cache: "no-cache",
@@ -63,7 +64,8 @@ export default async function Home({ params }: { params: any }) {
 		}
 	)
 	const {data: stayData} = await resStay.json();
-	console.log('Stay data - ', stayData)
+	// console.log('Stay data - ', stayData)
+
 	return (
 		<main className='bg-beige w-full flex-1 '>
 			<Hero
@@ -72,7 +74,7 @@ export default async function Home({ params }: { params: any }) {
 				apiUrl={process.env.API_URL!}
 			/>
 			<CreatingJourneys />
-			<StayAhead data={stayData.length > 0 ? stayData : MockEvents} apiUrl={process.env.API_URL!} />
+			<StayAhead data={stayData} apiUrl={process.env.API_URL!} />
 			<JoinUs />
 		</main>
 	);

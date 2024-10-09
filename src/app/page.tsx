@@ -19,6 +19,7 @@ export default async function Home() {
 	const types = await typesRes.json();
 
 	const ids: number[] = types.data.map((event: { id: any; }) => event.id);
+	// console.log(ids);
 
 	const articlesPromises = ids.map(id =>
 		fetch(
@@ -34,11 +35,15 @@ export default async function Home() {
 		)
 	);
 
-	const articlesResponses = await Promise.all(articlesPromises)
+	const articlesResponses = await Promise.all(articlesPromises);
 
-	const articlesData = await Promise.all(articlesResponses.map(res => res.json()))
+	const articlesData = await Promise.all(articlesResponses.map(res => res.json()));
 
 	const allArticles = articlesData.flatMap(data => data.data);
+
+	const uniqueArticles = allArticles.filter((article, index, self) =>
+		index === self.findIndex((a) => a.title === article.title)
+	);
 
 	function shuffle(array: any[]) {
 		for (let i = array.length - 1; i > 0; i--) {
@@ -48,7 +53,7 @@ export default async function Home() {
 		return array;
 	}
 
-	const shuffledArticles = shuffle(allArticles);
+	const shuffledArticles = shuffle(uniqueArticles);
 
 	return (
 		<main className='bg-beige w-full flex-1 '>
@@ -59,3 +64,4 @@ export default async function Home() {
 		</main>
 	);
 }
+
