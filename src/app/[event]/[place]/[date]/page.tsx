@@ -69,6 +69,7 @@ export default async function Home({ params }: { params: any }) {
 			<Hero
 				title={element?.title}
 				element={element}
+				apiUrl={process.env.API_URL!}
 			/>
 			<CreatingJourneys />
 			<StayAhead data={stayData.length > 0 ? stayData : MockEvents} apiUrl={process.env.API_URL!} />

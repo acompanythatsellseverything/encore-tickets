@@ -7,6 +7,7 @@ interface IProps {
 	title?: string;
 	image?: string;
 	element?: any
+	apiUrl?: string;
 }
 const Hero = (props: IProps) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,12 +25,13 @@ const Hero = (props: IProps) => {
 								loop
 								className="h-[600px] md:h-screen object-cover"
 							>
-								<source src={`${process.env.API_URL}${props.element.cover.url}`} type="video/mp4"/>
+								<source src={`${props.apiUrl}${props.element.cover.url}`} type="video/mp4"/>
 								Your browser does not support the video tag.
 							</video>
 						</div>
 						: <Image
-							src={`${process.env.API_URL}${props.element.cover.url}`}
+							// src={`${process.env.API_URL}${props.element.cover.url}`}
+							src={`${props.apiUrl}${props.element.cover.url}`}
 							alt={'Hero img'}
 							width={1440}
 							height={766}
