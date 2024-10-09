@@ -29,11 +29,11 @@ export async function generateMetadata({ params }: { params: any }) {
 }
 
 export default async function Home({ params }: { params: any }) {
-	console.log('Params - ', params);
+	// console.log('Params - ', params);
 
 	// Fetch some event
 	const res = await fetch(
-		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&populate=*`,
+		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&filters[city][$contains]=${params.place}&filters[date][$eq]=${params.date}&populate=*`,
 		{
 			method: 'GET',
 			cache: "no-cache",
@@ -46,13 +46,13 @@ export default async function Home({ params }: { params: any }) {
 
 
 	const data = await res.json();
-	console.log('Data - ', data)
+	// console.log('Data - ', data)
 	const element = data.data[0];
 	console.log('Element - ', element)
 
 	// Fetch all events from this category
 	const resStay = await fetch(
-		`${process.env.API_URL}/api/articles?filters[event_type][id]=${element.event_type.id}&populate=*`,
+		`${process.env.API_URL}/api/articles?filters[event_type][id]=${element.event_type.id}&filters[id][$ne]=${element.id}&populate=*`,
 		{
 			method: 'GET',
 			cache: "no-cache",
@@ -61,9 +61,9 @@ export default async function Home({ params }: { params: any }) {
 				Authorization: process.env.API_TOKEN!,
 			},
 		}
-	);
+	)
 	const {data: stayData} = await resStay.json();
-
+	console.log('Stay data - ', stayData)
 	return (
 		<main className='bg-beige w-full flex-1 '>
 			<Hero

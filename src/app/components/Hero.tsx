@@ -35,7 +35,7 @@ const Hero = (props: IProps) => {
 							alt={'Hero img'}
 							width={1440}
 							height={766}
-							className={'w-full h-[600px] md:h-screen'}
+							className={'w-full object-cover h-[600px] md:h-screen'}
 						/>
 
 				)}
