@@ -1,12 +1,13 @@
 'use client'
 import React, {useState} from 'react';
 
-const FileUpload = (props:any) => {
+export default function FileUpload(props:any){
     const [file, setFile] = useState<File | null>(null);
     const [username, setUsername] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState<string>('');
+    const [successfulMessage, setSuccessfulMessage] = useState<string>('');
 
     const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUsername(event.target.value);
@@ -44,11 +45,13 @@ const FileUpload = (props:any) => {
 
         const formData = new FormData();
         formData.append('file', file);
-
+        // ${props.apiUrl.replace('1337', '8000')}
         try {
-            const response = await fetch(`${props.apiUrl}:8000/upload-csv`, {
-                method: 'POST',
+            const response = await fetch(`${props.apiUrl.replace('1337', '8000')}/upload-csv`, {
+                method: "POST",
                 body: formData,
+                redirect: "follow",
+                cache: 'no-cache',
             });
 
             if (!response.ok) {
@@ -56,8 +59,9 @@ const FileUpload = (props:any) => {
             }
 
             const result = await response.json();
+            console.log(result)
             console.log('File uploaded successfully:', result);
-            setErrorMessage('');
+            setErrorMessage('File uploaded successfully')
         } catch (error) {
             setErrorMessage('Error during file upload.');
             console.error('Error during file upload:', error);
@@ -78,7 +82,7 @@ const FileUpload = (props:any) => {
                         <input type="password" id="password" value={password} onChange={handlePasswordChange}
                                className='border  border-black px-2'/>
                     </div>
-                    {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
+                    {errorMessage && <p className='text-red-700'>{errorMessage}</p>}
                     <button type="submit"
                             className='bg-black text-white font-bold py-2 border border-black hover:bg-white hover:text-black transition-all mt-4'>Login
                     </button>
@@ -89,7 +93,7 @@ const FileUpload = (props:any) => {
                         <label htmlFor="fileInput" className='mr-2'>Choose file:</label>
                         <input type="file" id="fileInput" onChange={handleFileChange}/>
                     </div>
-                    {errorMessage && <p style={{color: 'red'}}>{errorMessage}</p>}
+                    {errorMessage && <p className={errorMessage === 'File uploaded successfully' ? 'text-green-700' : 'text-red-700'}>{errorMessage}</p>}
                     <button type="submit"
                             className='bg-black text-white font-bold py-2 border border-black hover:bg-white hover:text-black transition-all w-full mt-4'>Upload
                         File
@@ -100,4 +104,4 @@ const FileUpload = (props:any) => {
     );
 };
 
-export default FileUpload;
+
