@@ -23,7 +23,7 @@ export default async function Home() {
 
 	const articlesPromises = ids.map(id =>
 		fetch(
-			`${process.env.API_URL}/api/articles?populate=*&sort[1]=createdAt:desc&pagination[limit]=4&filters[event_type][id]=${id}`,
+			`${process.env.API_URL}/api/articles?populate=*&sort[1]=createdAt:desc&pagination[limit]=20&filters[event_type][id]=${id}`,
 			{
 				method: 'GET',
 				cache: "no-cache",

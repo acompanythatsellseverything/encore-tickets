@@ -3,9 +3,7 @@ import StayAhead from '@/app/components/StayAhead';
 import JoinUs from '@/app/components/JoinUs';
 import React from 'react';
 import Hero from '@/app/components/Hero';
-import {MockEvents} from "@/data/MockEvents";
 
-// or Dynamic metadata
 export async function generateMetadata({ params }: { params: any }) {
 
 	const res = await fetch(
