@@ -7,8 +7,8 @@ export default function FileUpload(props:any){
     const [password, setPassword] = useState<string>('');
     const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
     const [errorMessage, setErrorMessage] = useState<string>('');
-    const [successfulMessage, setSuccessfulMessage] = useState<string>('');
-
+    // const [successfulMessage, setSuccessfulMessage] = useState<string>('');
+    const [loh, setLoh] = useState<any>();
     const handleUsernameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setUsername(event.target.value);
     };
@@ -59,15 +59,16 @@ export default function FileUpload(props:any){
             }
 
             const result = await response.json();
-            console.log(result)
-            console.log('File uploaded successfully:', result);
+            // console.log(result)
+            // console.log('File uploaded successfully:', result);
+            setLoh(result)
             setErrorMessage('File uploaded successfully')
         } catch (error) {
             setErrorMessage('Error during file upload.');
             console.error('Error during file upload:', error);
         }
     };
-
+    console.log('LOh', loh)
     return (
         <div className='px-4'>
             {!isAuthenticated ? (
@@ -93,7 +94,16 @@ export default function FileUpload(props:any){
                         <label htmlFor="fileInput" className='mr-2'>Choose file:</label>
                         <input type="file" id="fileInput" onChange={handleFileChange}/>
                     </div>
-                    {errorMessage && <p className={errorMessage === 'File uploaded successfully' ? 'text-green-700' : 'text-red-700'}>{errorMessage}</p>}
+                    {errorMessage &&
+                        <p className={errorMessage === 'File uploaded successfully' ? 'text-green-700 mt-2' : 'text-red-700 mt-2'}>{errorMessage}</p>}
+                    {loh &&
+                        <div className='mt-2'>
+                            <p>Total events: {loh.processed.total_events}</p>
+                            <p className='text-red-700'>Failed events: {loh.processed.failed_uploads}</p>
+                            <p className='text-green-700'>Successful events: {loh.processed.successful_uploads}</p>
+                        </div>
+                    }
+
                     <button type="submit"
                             className='bg-black text-white font-bold py-2 border border-black hover:bg-white hover:text-black transition-all w-full mt-4'>Upload
                         File
