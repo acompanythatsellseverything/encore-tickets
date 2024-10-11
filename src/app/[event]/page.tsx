@@ -32,7 +32,7 @@ export default async function Home({ params }: { params: any }) {
 
 	// Fetch some event
 	const res = await fetch(
-		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&filters[city][$contains]=${params.place}&filters[date][$eq]=${params.date}&populate=*`,
+		`${process.env.API_URL}/api/articles?filters[slug][$contains]=${params.event}&populate=*`,
 		{
 			method: 'GET',
 			cache: "no-cache",
@@ -45,7 +45,7 @@ export default async function Home({ params }: { params: any }) {
 
 
 	const data = await res.json();
-	// console.log('Data - ', data)
+	console.log('Data - ', data)
 	const element = data.data[0];
 	// console.log('Element - ', element)
 

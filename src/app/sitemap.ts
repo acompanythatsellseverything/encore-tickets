@@ -14,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const urls = data.map((article: any) => {
         return {
-            url: `https://acg-properties.com/${article.slug}/${article.city}/${article.date}`,
+            url: `https://acg-properties.com/${article.slug}`,
             lastModified: new Date(article.updatedAt),
             changeFrequency: 'daily',
             priority: 0.8,
