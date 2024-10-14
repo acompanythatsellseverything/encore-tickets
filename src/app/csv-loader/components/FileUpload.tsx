@@ -35,43 +35,10 @@ export default function FileUpload(props:any){
         }
     };
 
-    // const handleFileUploadSubmit = async (event: React.FormEvent) => {
-    //     event.preventDefault();
-    //
-    //     if (!file) {
-    //         setErrorMessage('No file selected.');
-    //         return;
-    //     }
-    //
-    //     const formData = new FormData();
-    //     formData.append('file', file);
-    //     // ${props.apiUrl.replace('1337', '8000')}
-    //     try {
-    //         const response = await fetch(`${props.apiUrl.replace('1337', '8000')}/upload-csv`, {
-    //             method: "POST",
-    //             body: formData,
-    //             redirect: "follow",
-    //             cache: 'no-cache',
-    //         });
-    //
-    //         if (!response.ok) {
-    //             const res = await response.json();
-    //             console.log('Response:', res)
-    //             throw new Error(`Upload failed: ${response.statusText}`);
-    //         }
-    //
-    //         const result = await response.json();
-    //         // console.log(result)
-    //         // console.log('File uploaded successfully:', result);
-    //         setLoh(result)
-    //         setErrorMessage('File uploaded successfully')
-    //     } catch (error) {
-    //         setErrorMessage('Error during file upload.');
-    //         console.error('Error during file upload:', error);
-    //     }
-    // };
     const handleFileUploadSubmit = async (event: React.FormEvent) => {
+        setErrorMessage('')
         setLoh(undefined)
+
         event.preventDefault();
         if (!file) {
             setErrorMessage('No file selected.');
@@ -86,13 +53,13 @@ export default function FileUpload(props:any){
                 redirect: "follow",
                 cache: 'no-cache',
             });
-            if (!response.ok) {
-                const res = await response.json();  // Parse JSON response from server
-                console.log('Response:', res);
-                // Set error message from server response
-                setErrorMessage(`Error: ${res.error}`);
-                return;
+
+            if(response.status === 400){
+                const res = await response.json();
+                setErrorMessage(res.error)
+                return
             }
+
             const result = await response.json();
             setLoh(result);
             setErrorMessage('File uploaded successfully');
@@ -101,7 +68,7 @@ export default function FileUpload(props:any){
             console.error('Error during file upload:', error);
         }
     };
-    // console.log('LOh', loh)
+    console.log('LOh', loh)
     return (
         <div className='px-4'>
             {!isAuthenticated ? (
