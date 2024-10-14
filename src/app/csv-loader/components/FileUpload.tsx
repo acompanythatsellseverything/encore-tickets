@@ -71,6 +71,7 @@ export default function FileUpload(props:any){
     //     }
     // };
     const handleFileUploadSubmit = async (event: React.FormEvent) => {
+        setLoh(undefined)
         event.preventDefault();
         if (!file) {
             setErrorMessage('No file selected.');
