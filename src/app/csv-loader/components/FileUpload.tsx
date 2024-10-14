@@ -65,10 +65,10 @@ export default function FileUpload(props:any){
             setErrorMessage('File uploaded successfully');
         } catch (error) {
             setErrorMessage('Error during file upload.');
-            console.error('Error during file upload:', error);
+            // console.error('Error during file upload:', error);
         }
     };
-    console.log('LOh', loh)
+    // console.log('LOh', loh)
     return (
         <div className='px-4'>
             {!isAuthenticated ? (
