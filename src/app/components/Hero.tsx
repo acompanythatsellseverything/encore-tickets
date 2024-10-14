@@ -18,12 +18,15 @@ const Hero = (props: IProps) => {
 					(props.element.cover.ext === '.mp4' || props.element.cover.ext === '.mpeg' || props.element.cover.ext === '.quicktime' || props.element.cover.ext === '.wmv' || props.element.cover.ext === '.avi' || props.element.cover.ext === '.flv') ?
 						<div>
 							<video
-								width="100%"
-								height="600px"
+								// width="100%"
+								// height="600px"
+								width={1440}
+								height={766}
 								autoPlay
 								muted
 								loop
-								className="h-[600px] md:h-screen object-cover"
+								// className="h-[600px] md:h-screen object-cover"
+								className="w-full object-cover h-[600px] md:h-screen"
 							>
 								<source src={`${props.apiUrl}${props.element.cover.url}`} type="video/mp4"/>
 								Your browser does not support the video tag.

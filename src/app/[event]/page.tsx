@@ -63,7 +63,10 @@ export default async function Home({ params }: { params: any }) {
 	)
 	const {data: stayData} = await resStay.json();
 	// console.log('Stay data - ', stayData)
-
+	// @ts-ignore
+	const uniqueStayData = stayData.filter((article, index, self) =>
+		index === self.findIndex((a:any) => a.title === article.title)
+	);
 	return (
 		<main className='bg-beige w-full flex-1 '>
 			<Hero
@@ -72,7 +75,7 @@ export default async function Home({ params }: { params: any }) {
 				apiUrl={process.env.API_URL!}
 			/>
 			<CreatingJourneys />
-			<StayAhead data={stayData} apiUrl={process.env.API_URL!} />
+			<StayAhead data={uniqueStayData} apiUrl={process.env.API_URL!} />
 			<JoinUs />
 		</main>
 	);
