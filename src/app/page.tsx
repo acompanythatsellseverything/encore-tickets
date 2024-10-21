@@ -3,6 +3,22 @@ import StayAhead from '@/app/components/StayAhead';
 import JoinUs from '@/app/components/JoinUs';
 import React from 'react';
 import Hero from '@/app/components/Hero';
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: 'VIP Access to Premium Live Events Worldwide | Encore Tickets',
+	description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+	keywords: 'VIP tickets, premium live events, concert tickets, sports tickets, theater experiences, festival tickets, exclusive events, personalized event experiences, Encore Tickets',
+	openGraph: {
+		title: 'VIP Access to Premium Live Events Worldwide | Encore Tickets',
+		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+		siteName: 'ENCORE TICKETS',
+	},
+	twitter: {
+		title: 'VIP Access to Premium Live Events Worldwide | Encore Tickets',
+		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+	},
+};
 
 export default async function Home() {
 	const typesRes = await fetch(
@@ -57,10 +73,10 @@ export default async function Home() {
 
 	return (
 		<main className='bg-beige w-full flex-1 '>
-			<Hero />
-			<CreatingJourneys />
+			<Hero/>
+			<CreatingJourneys/>
 			<StayAhead data={shuffledArticles} apiUrl={process.env.API_URL!}/>
-			<JoinUs />
+			<JoinUs/>
 		</main>
 	);
 }

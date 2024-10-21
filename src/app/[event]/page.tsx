@@ -24,6 +24,15 @@ export async function generateMetadata({ params }: { params: any }) {
 		title: element.metaTitle,
 		description: element.metaDescription,
 		keywords: element.metaKeywords,
+		openGraph: {
+			title: element.metaTitle,
+			description: element.metaDescription,
+			siteName: 'ENCORE TICKETS',
+		},
+		twitter: {
+			title: element.metaTitle,
+			description: element.metaDescription,
+		},
 	};
 }
 
