@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     openGraph: {
         images: [
             {
-                url: '/favicon-big.png',
+                url: '/favicon-big.ico',
                 alt: 'Encore Tickets Favicon',
             },
         ],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     twitter: {
         images: [
             {
-                url: '/favicon-big.png',
+                url: '/favicon-big.ico',
                 alt: 'Encore Tickets Favicon',
             },
         ],
@@ -39,8 +39,8 @@ export default function RootLayout({
     <head>
         <link rel="icon" href="/favicon.png" sizes="any" type="image/png"/>
 
-        <meta property="og:image" content="/favicon-big.png"/>
-        <meta name="twitter:image" content="/favicon-big.png"/>
+        <meta property="og:image" content="/favicon-ico.png"/>
+        <meta name="twitter:image" content="/favicon-ico.png"/>
 
         <script src="//code.tidio.co/lu6cigzk5m2anspiwcytnd8zthsifbiu.js" async></script>
     </head>
