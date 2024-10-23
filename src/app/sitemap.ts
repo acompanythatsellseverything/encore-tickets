@@ -14,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const urls = data.map((article: any) => {
         return {
-            url: `https://acg-properties.com/${article.slug}`,
+            url: `https://myencoreexperience.com/${article.slug}`,
             lastModified: new Date(article.updatedAt),
             changeFrequency: 'daily',
             priority: 0.8,
@@ -23,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const staticUrls = [
         {
-            url: 'https://acg-properties.com',
+            url: 'https://myencoreexperience.com',
             lastModified: new Date(),
             changeFrequency: 'daily',
             priority: 1,
