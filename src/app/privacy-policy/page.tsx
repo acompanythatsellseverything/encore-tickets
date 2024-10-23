@@ -1,5 +1,21 @@
 import Title from "@/components/Title";
 import Box from "@/components/Box";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Encore Tickets: Privacy Policy',
+    description: 'Learn how Encore Tickets collects, uses, and protects your personal data. Review our privacy practices for securing your information when purchasing tickets, accessing VIP services, and engaging with our platform.',
+    keywords: 'Privacy Policy, data protection, personal information, ticket purchase privacy, VIP services privacy, data collection practices, Encore Tickets, secure transactions, GDPR compliance, user privacy',
+    openGraph: {
+        title: 'Encore Tickets: Privacy Policy',
+        description: 'Learn how Encore Tickets collects, uses, and protects your personal data. Review our privacy practices for securing your information when purchasing tickets, accessing VIP services, and engaging with our platform.',
+        siteName: 'Encore Tickets',
+    },
+    twitter: {
+        title: 'Encore Tickets: Privacy Policy',
+        description: 'Learn how Encore Tickets collects, uses, and protects your personal data. Review our privacy practices for securing your information when purchasing tickets, accessing VIP services, and engaging with our platform.',
+    },
+};
 
 const privacyPolicyInfo = [
     {

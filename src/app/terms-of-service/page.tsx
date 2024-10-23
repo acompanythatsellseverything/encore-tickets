@@ -1,5 +1,21 @@
 import Title from "@/components/Title";
 import Box from "@/components/Box";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'Encore Tickets: Terms Of Service',
+    description: 'Discover Encore Tickets\' Terms of Service. Learn about our policies for VIP access, concert, sports, and theater tickets, and ensure smooth, secure transactions for personalized event experiences.',
+    keywords: 'Terms of Service, ticket policy, VIP tickets, premium event access, event policies, ticket purchase terms, refund policy, Encore Tickets, concert tickets, theater tickets, sports events, event security',
+    openGraph: {
+        title: 'Encore Tickets: Terms Of Service',
+        description: 'Discover Encore Tickets\' Terms of Service. Learn about our policies for VIP access, concert, sports, and theater tickets, and ensure smooth, secure transactions for personalized event experiences.',
+        siteName: 'Encore Tickets',
+    },
+    twitter: {
+        title: 'Encore Tickets: Terms Of Service',
+        description: 'Discover Encore Tickets\' Terms of Service. Learn about our policies for VIP access, concert, sports, and theater tickets, and ensure smooth, secure transactions for personalized event experiences.',
+    },
+};
 
 const privacyPolicyInfo = [
     {

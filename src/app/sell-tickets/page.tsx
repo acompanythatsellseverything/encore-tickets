@@ -1,4 +1,20 @@
 import { SellTicketBlock } from './components/SellTicketBlock';
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+	title: 'Encore Tickets: Sell Tickets',
+	description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+	keywords: 'VIP tickets, premium live events, concert tickets, sports tickets, theater experiences, festival tickets, exclusive events, personalized event experiences, Encore Tickets',
+	openGraph: {
+		title: 'Encore Tickets: Sell Tickets',
+		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+		siteName: 'ENCORE TICKETS',
+	},
+	twitter: {
+		title: 'Encore Tickets: Sell Tickets',
+		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+	},
+};
 
 export default function page() {
 	return (
