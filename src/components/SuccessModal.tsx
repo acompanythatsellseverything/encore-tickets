@@ -1,43 +1,35 @@
-import React, {useEffect, useState} from 'react';
-import {motion} from "framer-motion";
+import React, { useEffect } from 'react';
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
 interface SuccessModalProps {
     isOpen: boolean;
+    onClose: () => void;
 }
 
-const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen }) => {
-    const [isModalOpen, setIsModalOpen] = useState<boolean>(isOpen)
-
+const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
     useEffect(() => {
-        // Disable scroll when modal is open
-        if (isModalOpen) {
+        if (isOpen) {
             document.body.style.overflow = "hidden";
         } else {
             document.body.style.overflow = "";
         }
 
-        // Cleanup function to reset overflow when the component unmounts
         return () => {
             document.body.style.overflow = "";
         };
-    }, [isModalOpen]);
+    }, [isOpen]);
 
-    // Prevent the click inside the modal from triggering the close
-    const handleModalClick = (e: { stopPropagation: () => void }) => {
-        e.stopPropagation();
-    };
-
-    if (!isModalOpen) return null;
+    if (!isOpen) return null;
 
     return (
         <div
             className="fixed inset-0 bg-secondary bg-opacity-50 flex items-center justify-center px-4 z-50"
-            onClick={handleModalClick}
+            onClick={onClose}
         >
-            <div className="bg-beige p-4 rounded lg:w-[689px] lg:h-[442px] relative text-secondary py-20">
-                <button onClick={() => setIsModalOpen(false)}
+            <div className="bg-beige p-4 rounded lg:w-[689px] lg:h-[442px] relative text-secondary py-20" onClick={(e) => e.stopPropagation()}>
+                <button onClick={onClose}
                         className="text-secondary text-xl absolute right-5 top-5 w-[35px] h-[16px]">
                     <motion.span
                         className="block w-9 h-0.5 bg-secondary absolute"
@@ -64,7 +56,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen }) => {
                     <Link href={'tel:3051252288'} className='underline font-bold text-secondary'>
                         (305)&#32;125&#32;22&#32;88
                     </Link>
-                    <nav className='flex gap-5 w-fit  text-secondary'>
+                    <nav className='flex gap-5 w-fit text-secondary'>
                         <Link href={'#'}>
                             <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>
                         </Link>
@@ -77,7 +69,6 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen }) => {
                     </nav>
                 </div>
                 <Image src={'/img/main/qr-code.png'} alt='Qr code' width={284} height={45} className='mt-12 mx-auto'/>
-
             </div>
         </div>
     );
