@@ -9,20 +9,10 @@ export const metadata: Metadata = {
         icon: '/favicon.png',
     },
     openGraph: {
-        images: [
-            {
-                url: '/favicon-big.ico',
-                alt: 'Encore Tickets Favicon',
-            },
-        ],
+        images: ['/favicon.png'],
     },
     twitter: {
-        images: [
-            {
-                url: '/favicon-big.ico',
-                alt: 'Encore Tickets Favicon',
-            },
-        ],
+        images: ['/favicon.png'],
     },
 };
 
@@ -38,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
     <head>
         <link rel="icon" href="/favicon.png" sizes="any" type="image/png"/>
+        <link rel="icon" href="/favicon-big.ico" sizes="512x512"/>
 
         <meta property="og:image" content="/favicon-ico.png"/>
         <meta name="twitter:image" content="/favicon-ico.png"/>
@@ -45,7 +36,7 @@ export default function RootLayout({
         <script src="//code.tidio.co/lu6cigzk5m2anspiwcytnd8zthsifbiu.js" async></script>
     </head>
     <body className={inter.className + ' flex flex-col relative'}>
-        <Header/>
+    <Header/>
         {children}
         <Footer/>
     </body>
