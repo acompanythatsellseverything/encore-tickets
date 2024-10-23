@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     openGraph: {
         images: [
             {
-                url: '/favicon.png',
+                url: '/favicon-big.png',
                 alt: 'Encore Tickets Favicon',
             },
         ],
@@ -19,13 +19,12 @@ export const metadata: Metadata = {
     twitter: {
         images: [
             {
-                url: '/favicon.png',
+                url: '/favicon-big.png',
                 alt: 'Encore Tickets Favicon',
             },
         ],
     },
 };
-
 
 const inter = Inter({ subsets: ["latin"] })
 const Header = dynamic(() => import('@/components/Header'), { ssr: false })
@@ -38,14 +37,18 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
-        <link rel="icon" href="/favicon.png"/>
+        <link rel="icon" href="/favicon.png" sizes="any" type="image/png"/>
+
+        <meta property="og:image" content="/favicon-big.png"/>
+        <meta name="twitter:image" content="/favicon-big.png"/>
+
         <script src="//code.tidio.co/lu6cigzk5m2anspiwcytnd8zthsifbiu.js" async></script>
     </head>
     <body className={inter.className + ' flex flex-col relative'}>
         <Header/>
         {children}
         <Footer/>
-      </body>
+    </body>
     </html>
   );
 }
