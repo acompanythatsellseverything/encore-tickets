@@ -9,10 +9,12 @@ export const metadata: Metadata = {
 		title: 'Encore Tickets: Sell Tickets',
 		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
 		siteName: 'ENCORE TICKETS',
+		images: ['/favicon-big.png']
 	},
 	twitter: {
 		title: 'Encore Tickets: Sell Tickets',
 		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
+		images: ['/favicon-big.png']
 	},
 };
 

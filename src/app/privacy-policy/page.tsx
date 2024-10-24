@@ -10,10 +10,12 @@ export const metadata: Metadata = {
         title: 'Encore Tickets: Privacy Policy',
         description: 'Learn how Encore Tickets collects, uses, and protects your personal data. Review our privacy practices for securing your information when purchasing tickets, accessing VIP services, and engaging with our platform.',
         siteName: 'Encore Tickets',
+        images: ['/favicon-big.png']
     },
     twitter: {
         title: 'Encore Tickets: Privacy Policy',
         description: 'Learn how Encore Tickets collects, uses, and protects your personal data. Review our privacy practices for securing your information when purchasing tickets, accessing VIP services, and engaging with our platform.',
+        images: ['/favicon-big.png']
     },
 };
 

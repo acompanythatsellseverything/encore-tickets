@@ -10,10 +10,12 @@ export const metadata: Metadata = {
         title: 'Encore Tickets: Terms Of Service',
         description: 'Discover Encore Tickets\' Terms of Service. Learn about our policies for VIP access, concert, sports, and theater tickets, and ensure smooth, secure transactions for personalized event experiences.',
         siteName: 'Encore Tickets',
+        images: ['/favicon-big.png']
     },
     twitter: {
         title: 'Encore Tickets: Terms Of Service',
         description: 'Discover Encore Tickets\' Terms of Service. Learn about our policies for VIP access, concert, sports, and theater tickets, and ensure smooth, secure transactions for personalized event experiences.',
+        images: ['/favicon-big.png']
     },
 };
 

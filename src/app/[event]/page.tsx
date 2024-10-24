@@ -28,10 +28,12 @@ export async function generateMetadata({ params }: { params: any }) {
 			title: element.metaTitle,
 			description: element.metaDescription,
 			siteName: 'ENCORE TICKETS',
+			images: [`${process.env.API_URL}${element.cover.url}`]
 		},
 		twitter: {
 			title: element.metaTitle,
 			description: element.metaDescription,
+			images: [`${process.env.API_URL}${element.cover.url}`]
 		},
 	};
 }
@@ -54,7 +56,6 @@ export default async function Home({ params }: { params: any }) {
 
 
 	const data = await res.json();
-	console.log('Data - ', data)
 	const element = data.data[0];
 	// console.log('Element - ', element)
 
