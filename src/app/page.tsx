@@ -57,7 +57,7 @@ export default async function Home() {
 
 	const allArticles = articlesData.flatMap(data => data.data)
 
-	const filteredArticles = allArticles.filter(article => article.displayOnMainPage)
+	const filteredArticles = allArticles.filter(article => article.display_on_main_page)
 
 	const uniqueArticles = filteredArticles.filter((article, index, self) =>
 		index === self.findIndex((a) => a.title === article.title)
