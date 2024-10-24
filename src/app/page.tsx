@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 		title: 'VIP Access to Premium Live Events Worldwide | Encore Tickets',
 		description: 'Discover personalized premium experiences for concerts, sports, theater, and festivals worldwide. Get VIP access and elevate your event journey with Encore Tickets',
 	},
-};
+}
 
 export default async function Home() {
 	const typesRes = await fetch(
@@ -32,10 +32,9 @@ export default async function Home() {
 			},
 		}
 	);
-	const types = await typesRes.json();
+	const types = await typesRes.json()
 
-	const ids: number[] = types.data.map((event: { id: any; }) => event.id);
-	// console.log(ids);
+	const ids: number[] = types.data.map((event: { id: any; }) => event.id)
 
 	const articlesPromises = ids.map(id =>
 		fetch(
@@ -49,24 +48,25 @@ export default async function Home() {
 				}
 			}
 		)
-	);
+	)
 
-	const articlesResponses = await Promise.all(articlesPromises);
+	const articlesResponses = await Promise.all(articlesPromises)
+	const articlesData = await Promise.all(articlesResponses.map(res => res.json()))
 
-	const articlesData = await Promise.all(articlesResponses.map(res => res.json()));
+	const allArticles = articlesData.flatMap(data => data.data)
 
-	const allArticles = articlesData.flatMap(data => data.data);
+	const filteredArticles = allArticles.filter(article => article.displayOnMainPage)
 
-	const uniqueArticles = allArticles.filter((article, index, self) =>
+	const uniqueArticles = filteredArticles.filter((article, index, self) =>
 		index === self.findIndex((a) => a.title === article.title)
-	);
+	)
 
 	function shuffle(array: any[]) {
 		for (let i = array.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 2));
 			[array[i], array[j]] = [array[j], array[i]];
 		}
-		return array;
+		return array
 	}
 
 	const shuffledArticles = shuffle(uniqueArticles);
