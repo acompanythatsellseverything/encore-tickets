@@ -2,7 +2,7 @@
 
 const nextConfig = {
 	images: {
-        domains: ['209.126.9.253'],
+        domains: ['admin.myencoreexperience.com'],
   },
 };
 
