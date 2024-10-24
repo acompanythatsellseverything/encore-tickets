@@ -28,12 +28,12 @@ export async function generateMetadata({ params }: { params: any }) {
 			title: element.metaTitle,
 			description: element.metaDescription,
 			siteName: 'ENCORE TICKETS',
-			images: [`${process.env.API_URL}${element.cover.url}`]
+			images: [`${process.env.API_URL}${element.stay_ahead.url}`]
 		},
 		twitter: {
 			title: element.metaTitle,
 			description: element.metaDescription,
-			images: [`${process.env.API_URL}${element.cover.url}`]
+			images: [`${process.env.API_URL}${element.stay_ahead.url}`]
 		},
 	};
 }
