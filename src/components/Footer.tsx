@@ -28,8 +28,8 @@ const Footer = () => {
                         <Link href={'mailto:info@encoretix.com'} className='underline w-1/3 md:w-auto'>
                             info@encoretix.com
                         </Link>
-                        <Link href={'tel:3051252288'} className='underline w-1/3 md:w-auto'>
-                            (305)&#32;125&#32;22&#32;88
+                        <Link href={'tel:2406906136'} className='underline w-1/3 md:w-auto'>
+                            240-690-6136
                         </Link>
                         <Link href={'/terms-of-service'} className='w-1/3 md:w-auto'>
                             Terms of services

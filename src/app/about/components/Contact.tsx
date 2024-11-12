@@ -34,8 +34,8 @@ const Contact = () => {
                                     <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
                                 </Link>
                             </nav>
-                            <Link href={'tel:3051252288'} className='underline font-bold text-secondary'>
-                                (305)&#32;125&#32;22&#32;88
+                            <Link href={'tel:2406906136'} className='underline font-bold text-secondary'>
+                                240-690-6136
                             </Link>
                         </div>
                         <Text className='uppercase mt-20'>email</Text>

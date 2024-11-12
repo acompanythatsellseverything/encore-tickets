@@ -53,8 +53,8 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
                     </p>
                 </div>
                 <div className='flex justify-center mt-10 gap-5'>
-                    <Link href={'tel:3051252288'} className='underline font-bold text-secondary'>
-                        (305)&#32;125&#32;22&#32;88
+                    <Link href={'tel:2406906136'} className='underline font-bold text-secondary'>
+                        240-690-6136
                     </Link>
                     <nav className='flex gap-5 w-fit text-secondary'>
                         <Link href={'#'}>

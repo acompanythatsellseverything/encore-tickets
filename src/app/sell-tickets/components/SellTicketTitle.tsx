@@ -15,7 +15,7 @@ export const SellTicketTitle = () => {
 				and we’ll help you find the right buyer for your one-of-a-kind event.
 			</Text>
 			<Text className='text-sm md:text-center'>BY PHONE</Text>
-			<Subtitle className='underline text-start md:text-center'>(305) 125 22 88</Subtitle>
+			<Subtitle className='underline text-start md:text-center'>240-690-6136</Subtitle>
 		</div>
 	);
 };
