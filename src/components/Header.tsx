@@ -154,13 +154,13 @@ const Header = () => {
                                     </Link>
                                 </div>
                                 <div className='flex gap-6'>
-                                    <Link href={'#'}>
+                                    <Link href={'https://www.facebook.com/Encoretix'} target='_blank'>
                                         <Image src={'/img/icons/facebook-white.svg'} width={30} height={30} alt={'Facebook'} />
                                     </Link>
                                     <Link href={'#'}>
                                         <Image src={'/img/icons/tik-tok-white.svg'} width={30} height={30} alt={'TikTok'} />
                                     </Link>
-                                    <Link href={'#'}>
+                                    <Link href={'https://www.instagram.com/encoretix/'} target='_blank'>
                                         <Image src={'/img/icons/inst-white.svg'} width={30} height={30} alt={'Instagram'} />
                                     </Link>
                                     <Link href={'#'}>

@@ -11,16 +11,16 @@ const Footer = () => {
                     <Image src={'/img/icons/small-logo.svg'} alt='logo' width={43} height={50}/>
                     <p className='uppercase text-xl text-secondary'>Follow us social media</p>
                     <nav className='flex gap-6'>
-                        <Link href={'#'}>
+                        <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
                             <Image src={'/img/icons/facebook.svg'} width={30} height={30} alt={'Facebook'} />
                         </Link>
                         <Link href={'#'}>
                             <Image src={'/img/icons/tik-tok.svg'} width={30} height={30} alt={'TikTok'} />
                         </Link>
-                        <Link href={'#'}>
+                        <Link href={'https://www.instagram.com/encoretix/'} target='_blank'>
                             <Image src={'/img/icons/instagram.svg'} width={30} height={30} alt={'Instagram'} />
                         </Link>
-                        <Link href={'#'}>
+                        <Link href={'https://x.com/encoretix'}  target='_blank'>
                             <Image src={'/img/icons/x.svg'} width={30} height={30} alt={'X'} />
                         </Link>
                     </nav>
