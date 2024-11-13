@@ -32,25 +32,25 @@ const privacyPolicyInfo = [
 		txt: (
 			<span>
 				Encore Tickets acts as an intermediary between buyers and ticket sellers
-				("TICKET SELLERS") to facilitate the purchase and sale of event tickets,
+				(&quot;TICKET SELLERS&quot;) to facilitate the purchase and sale of event tickets,
 				and as such is not directly involved in the actual ticket sale
 				transaction between the buyers and TICKET SELLERS. All sales are final.
 				As tickets sold through SITE are often obtained through the secondary
 				market and prices are determined by the individual ticket seller, the
 				prices for tickets may be above or below face value. Tickets sold
-				through SITE are from a third party; therefore, the buyer's name will
+				through SITE are from a third party; therefore, the buyer&apos;s name will
 				not be printed on the tickets. Please note that the name on the tickets
-				does not affect the buyer's ability to access the event.
+				does not affect the buyer&apos;s ability to access the event.
 				<br />
 				<br />
-				The following are the rules ("TERMS") that govern use of the
-				Encoretix.com Web Site ("SITE") by the user of the SITE ("USER"). By
+				The following are the rules (&quot;TERMS&quot;) that govern use of the
+				Encoretix.com Web Site (&quot;SITE&quot;) by the user of the SITE (&quot;USER&quot;). By
 				using or visiting the SITE, USER expressly agrees to be bound by these
 				TERMS and to follow these TERMS and all applicable laws and regulations
 				governing the SITE. SITE reserves the right to change these TERMS at any
 				time, effective immediately upon posting on the SITE. If USER violates
-				these TERMS Encore Tickets may terminate USER'S access to the SITE, bar
-				USER from future use of the SITE, cancel USER'S ticket order, and/or
+				these TERMS Encore Tickets may terminate USER&apos;S access to the SITE, bar
+				USER from future use of the SITE, cancel USER&apos;S ticket order, and/or
 				take appropriate legal action against USER.
 			</span>
 		),
@@ -61,7 +61,7 @@ const privacyPolicyInfo = [
 			<span>
 				Tickets sold through SITE are often obtained through secondary market
 				TICKET SELLERS and are being resold, in many cases, above the price or
-				"face value" listed on the ticket. All ticket prices include additional
+				&quot;face value&quot; listed on the ticket. All ticket prices include additional
 				service charges and handling fees as defined on each order. SITE and its
 				TICKET SELLERS are not directly affiliated with any performer, sports
 				team, or venue; and SITE does not act as a primary sale box office,
@@ -71,9 +71,9 @@ const privacyPolicyInfo = [
 				than the original purchase price.
 				<br />
 				<br />
-				Orders placed through SITE will be fulfilled by one of SITE'S network of
+				Orders placed through SITE will be fulfilled by one of SITE&apos;S network of
 				participating TICKET SELLERS. Contact information for the TICKET SELLER
-				who fulfills USER's order (hereinafter known as "FULFILLER") will be
+				who fulfills USER&apos;s order (hereinafter known as &quot;FULFILLER&quot;) will be
 				provided to USER upon completion of the purchase process. If this
 				information is lost, USER may contact concierge@encoretix.com to
 				retrieve information about the order.
@@ -89,13 +89,13 @@ const privacyPolicyInfo = [
 				rescheduled, tickets will be honored for the rescheduled date. New
 				tickets will not need to be issued. If an event is cancelled without a
 				rescheduled date, USER will need to contact the FULFILLER for a refund.
-				The FULFILLER may require USER to return the supplied tickets at USER's
+				The FULFILLER may require USER to return the supplied tickets at USER&apos;s
 				expense before receiving any refund USER is entitled to due to
 				cancellation. SITE is not responsible for providing or securing this
 				refund for USER. Any shipping and handling charges are not refundable.
 				Refunds will be processed in the same currency as the original order.
 				Conversion charges, including though not exhaustive of the ones issued
-				by USER's bank, if any, are not covered by Encore Tickets or Fulfiller.
+				by USER&apos;s bank, if any, are not covered by Encore Tickets or Fulfiller.
 				Neither SITE nor the FULFILLER will issue exchanges or refunds after a
 				purchase has been made or for lost, stolen, damaged or destroyed
 				tickets. When USER receives tickets, USER should keep them in a safe
@@ -109,16 +109,16 @@ const privacyPolicyInfo = [
 			<span>
 				All prices are in United States Dollars (USD) unless otherwise
 				specifically stated. SITE cannot confirm the price of an item until
-				after an order is completed by USER. Despite SITE'S best efforts, a
+				after an order is completed by USER. Despite SITE&apos;S best efforts, a
 				small number of the items listed on the SITE may be priced incorrectly.
-				If the FULFILLER discovers an item's correct price is higher than the
+				If the FULFILLER discovers an item&apos;s correct price is higher than the
 				stated price, the FULFILLER will either complete the order at the
 				original price, contact USER to inform them of different price with an
-				option to purchase, or cancel USER'S order and notify USER of such
+				option to purchase, or cancel USER&apos;S order and notify USER of such
 				cancellation.
 				<br />
 				<br />
-				The price charged to USER's credit card beyond the price of the
+				The price charged to USER&apos;s credit card beyond the price of the
 				individual tickets shall include the following fees and charges:
 			</span>
 		),
@@ -128,7 +128,7 @@ const privacyPolicyInfo = [
 		txt: (
 			<span>
 				Cost per ticket associated with SITE operation, customer service center
-				operation, and other costs associated with the fulfillment of USER's
+				operation, and other costs associated with the fulfillment of USER&apos;s
 				ticket request.
 			</span>
 		),
@@ -137,8 +137,8 @@ const privacyPolicyInfo = [
 		title: 'Delivery',
 		txt: (
 			<span>
-				Costs associated with the Delivery Method chosen by USER and the SITE'S
-				arrangement of USER's ticket delivery by the FULFILLER
+				Costs associated with the Delivery Method chosen by USER and the SITE&apos;S
+				arrangement of USER&apos;s ticket delivery by the FULFILLER
 			</span>
 		),
 	},
@@ -146,7 +146,7 @@ const privacyPolicyInfo = [
 		title: 'Total',
 		txt: (
 			<span>
-				Entire amount charged to USER, including each ticket's price as set by
+				Entire amount charged to USER, including each ticket&apos;s price as set by
 				the FULFILLER, Service Fee, and Delivery.
 			</span>
 		),
@@ -156,9 +156,9 @@ const privacyPolicyInfo = [
 		txt: (
 			<span>
 				Prices stated on the SITE do not include any state or other local taxes
-				that may apply to USER'S order. TICKET SELLERS may collect sales tax as
-				is appropriate for their locality. If taxes are applicable to USER'S
-				order they will be added to USER'S order as a separate charge in
+				that may apply to USER&apos;S order. TICKET SELLERS may collect sales tax as
+				is appropriate for their locality. If taxes are applicable to USER&apos;S
+				order they will be added to USER&apos;S order as a separate charge in
 				addition to the TOTAL.
 			</span>
 		),
@@ -238,7 +238,7 @@ const privacyPolicyInfo = [
 		txt: (
 			<span>
 				SITE, in its sole discretion, and without prior notice, may terminate
-				USER'S access to the SITE, cancel USER'S ticket order or exercise any
+				USER&apos;S access to the SITE, cancel USER&apos;S ticket order or exercise any
 				other remedy available to it. USER agrees that monetary damages may not
 				provide a sufficient remedy to SITE for violations of these terms and
 				conditions and USER consents to injunctive or other equitable relief for
@@ -267,7 +267,7 @@ const privacyPolicyInfo = [
 				unauthorized use of the materials appearing on this site may violate
 				copyright, trademark and other applicable laws and could result in
 				criminal or civil penalties. Neither, SITE or its affiliates warrant or
-				represent that USER'S use of materials displayed on, or obtained
+				represent that USER&apos;S use of materials displayed on, or obtained
 				through, this site will not infringe the rights of third parties. All
 				other trademarks or service marks are property of their respective
 				owners. Nothing in these TERMS grants USER any right to use any
@@ -278,9 +278,9 @@ const privacyPolicyInfo = [
 				exemption to do so. After proper notification by the copyright holder or
 				its agent to us, and confirmation through court order or admission by
 				the USER that they have used this SITE as an instrument of unlawful
-				infringement, SITE will terminate the infringing USER'S rights to use
+				infringement, SITE will terminate the infringing USER&apos;S rights to use
 				and/or access to this SITE. SITE may, also in its sole discretion,
-				decide to terminate a USER's rights to use or access to the SITE prior
+				decide to terminate a USER&apos;s rights to use or access to the SITE prior
 				to that time if SITE believes that the alleged infringement has
 				occurred.
 			</span>
@@ -293,7 +293,7 @@ const privacyPolicyInfo = [
 				SITE MAKES NO ASSURANCES THAT THE SITE WILL BE ERROR-FREE,
 				UNINTERRUPTED, OR PROVIDE SPECIFIC RESULTS FROM USE OF THE SITE OR ANY
 				SITE CONTENT, SEARCH OR LINK THEREIN. THE SITE AND SITE CONTENT ARE
-				DELIVERED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS. SITE MAKES NO
+				DELIVERED ON AN &quot;AS-IS&quot; AND &quot;AS-AVAILABLE&quot; BASIS. SITE MAKES NO
 				ASSURANCES THAT FILES USER ACCESSES OR DOWNLOADS FROM THE SITE WILL BE
 				FREE OF VIRUSES OR CONTAMINATION OR DESTRUCTIVE FEATURES. SITE DISCLAIMS
 				ALL WARRANTIES, EXPRESS OR IMPLIED INCLUDING ALSO ANY IMPLIED WARRANTIES
@@ -322,7 +322,7 @@ const privacyPolicyInfo = [
 			<span>
 				USER acknowledges that SITE is a venue allowing people to buy and sell
 				tickets to concert, sporting and entertainment events. The listings of
-				ticket inventory on SITE are provided by a third party ("PROVIDER").
+				ticket inventory on SITE are provided by a third party (&quot;PROVIDER&quot;).
 				Neither SITE nor PROVIDER is involved in the actual transaction between
 				buyers and sellers. While SITE and PROVIDER may help facilitate the
 				resolution of disputes, neither SITE nor PROVIDER has control over the
@@ -330,8 +330,8 @@ const privacyPolicyInfo = [
 				listings, the ability of the FULFILLER to sell tickets, or that USER and
 				FULFILLER will actually complete a transaction. Regardless of this
 				provision, if either SITE or PROVIDER is found to be liable, SITE or
-				PROVIDER'S liability to USER or any third party is limited to the
-				greater of (a) any amounts due under SITE's limited guarantee when
+				PROVIDER&apos;S liability to USER or any third party is limited to the
+				greater of (a) any amounts due under SITE&apos;s limited guarantee when
 				applicable, (b) the amount of fees in dispute not to exceed the total
 				fees of the transaction, or (c) $100.
 				<br />
@@ -365,9 +365,9 @@ const privacyPolicyInfo = [
 				Any controversy, claim, dispute, or other action, arising out of or
 				relating to the use of SITE, any order placed on SITE, or these policies
 				including any dispute over the validity, enforceability or scope of this
-				arbitration provision (a "CLAIM" or "CLAIMS") shall be resolved through
+				arbitration provision (a &quot;CLAIM&quot; or &quot;CLAIMS&quot;) shall be resolved through
 				binding arbitration administered by the American Arbitration Association
-				(the "AAA") in accordance with its Consumer Rules. SITE will pay all
+				(the &quot;AAA&quot;) in accordance with its Consumer Rules. SITE will pay all
 				filing, administration, and arbitrator fees for any arbitration for a
 				CLAIM of US$10,000 or less. If, however, the arbitrator finds that
 				either the substance of the CLAIM or the relief sought in the CLAIM is
@@ -375,7 +375,7 @@ const privacyPolicyInfo = [
 				measured by the standards set forth in Federal Rule of Civil Procedure
 				11(b)), then the payment of all such fees will be governed by applicable
 				AAA Rules. In such case, USER agrees to reimburse SITE for all monies
-				previously disbursed by SITE that are otherwise USER's obligation to pay
+				previously disbursed by SITE that are otherwise USER&apos;s obligation to pay
 				under the AAA Rules. In addition, if USER initiates an arbitration for a
 				CLAIM for more than US$10,000, the payment of fees will be governed by
 				the AAA Rules. The AAA rules will determine whether the arbitration will
@@ -390,22 +390,22 @@ const privacyPolicyInfo = [
 				BEFORE A JUDGE OR JURY. INSTEAD, A NEUTRAL ARBITRATOR WILL RESOLVE ALL
 				CLAIMS. IF USER DOES NOT WISH TO BE BOUND BY THIS ARBITRATION PROVISION,
 				USER MUST NOTIFY SITE IN WRITING WITHIN 30 DAYS OF THE DATE THAT USER
-				PLACES AN ORDER ON SITE. USER's WRITTEN NOTIFICATION TO SITE MUST
-				INCLUDE USER's NAME, ADDRESS AND ORDER NUMBER AS WELL AS A CLEAR
+				PLACES AN ORDER ON SITE. USER&apos;s WRITTEN NOTIFICATION TO SITE MUST
+				INCLUDE USER&apos;s NAME, ADDRESS AND ORDER NUMBER AS WELL AS A CLEAR
 				STATEMENT THAT USER DOES NOT WISH TO RESOLVE CLAIMS WITH SITE THROUGH
 				ARBITRATION. WRITTEN NOTIFICATION SHOULD BE MAILED TO SITE.
 				<br />
 				<br />
 				Any arbitration or trial by a judge of any CLAIM will take place on an
 				individual basis without resort to any form of class or representative
-				action ("CLASS ACTION WAIVER"). Regardless of anything else in this
+				action (&quot;CLASS ACTION WAIVER&quot;). Regardless of anything else in this
 				Arbitration Provision, the validity and effect of this CLASS ACTION
 				WAIVER may be determined only by a court and not by an arbitrator. USER
 				and SITE acknowledge that the CLASS ACTION WAIVER is material and
 				essential to the arbitration of any disputes between the parties and is
 				non-severable from the agreement to arbitrate CLAIMS. If the CLASS
 				ACTION WAIVER is limited, voided or found unenforceable, then the
-				parties' agreement to arbitrate shall be null and void with respect to
+				parties&apos; agreement to arbitrate shall be null and void with respect to
 				such proceeding, subject to the right to appeal the limitation or
 				invalidation of the CLASS ACTION WAIVER. USER AND SITE ACKNOWLEDGE AND
 				AGREE THAT UNDER NO CIRCUMSTANCES WILL A CLASS ACTION BE ARBITRATED.
@@ -415,7 +415,7 @@ const privacyPolicyInfo = [
 				with this Arbitration and Dispute Resolution Section. All CLAIMS filed
 				or brought contrary to this Arbitration and Dispute Resolution Section
 				shall be considered improperly filed. Should USER improperly file a
-				CLAIM, SITE may recover attorneys' fees and costs up to US$1,000 from
+				CLAIM, SITE may recover attorneys&apos; fees and costs up to US$1,000 from
 				USER, provided that SITE has notified USER in writing of the improperly
 				filed CLAIM, and USER fails to promptly withdraw the CLAIM after USER
 				receives notice of improper filing from SITE.
@@ -438,7 +438,7 @@ const privacyPolicyInfo = [
 				rules and policies due to its inability to perform its obligations by
 				reason of any fire, earthquake, flood, epidemic, accident, explosion,
 				casualty, strike, labor controversy, riot, civil disturbance, act of
-				public enemy, war, act of God, or other causes beyond SITE'S control
+				public enemy, war, act of God, or other causes beyond SITE&apos;S control
 				(collectively referred to as FORCE MAJEURE). SITE may terminate this
 				Agreement in the event that USER is prevented from performing due to
 				FORCE MAJEURE.
@@ -473,10 +473,10 @@ const privacyPolicyInfo = [
 				confidentiality of their username and password. USER agrees to
 				immediately notify SITE at concierge@encoretix.com should USER know, or
 				have reasonable grounds to suspect, that the username or password have
-				been compromised. SITE shall not be responsible for USER'S failure to
+				been compromised. SITE shall not be responsible for USER&apos;S failure to
 				abide by this paragraph. SITE may, in its sole discretion, terminate the
-				USER'S account for any reason. Under no circumstances shall SITE be
-				liable to any USER or third party for termination of USER'S account.
+				USER&apos;S account for any reason. Under no circumstances shall SITE be
+				liable to any USER or third party for termination of USER&apos;S account.
 			</span>
 		),
 	},
@@ -485,7 +485,7 @@ const privacyPolicyInfo = [
 		txt: (
 			<span>
 				SITE may allow third party advertisers to advertise on the SITE. SITE
-				undertakes no responsibility for USER'S dealings with, including any
+				undertakes no responsibility for USER&apos;S dealings with, including any
 				on-line or other purchases from, any third party advertisers. SITE shall
 				not be responsible for any loss or damage incurred by USER in its
 				dealings with third party advertisers.
@@ -500,9 +500,9 @@ const privacyPolicyInfo = [
 				on this SITE. PROVIDER only accesses or collects information that USER
 				voluntarily provides via email or other direct contact, or when USER
 				grants SITE permission, such as during ticket requests or purchases from
-				a FULFILLER. PROVIDER, along with FULFILLER, will use USER's personal
+				a FULFILLER. PROVIDER, along with FULFILLER, will use USER&apos;s personal
 				information for transactional purposes, including customer service.
-				PROVIDER may also use USER's information to provide marketing services
+				PROVIDER may also use USER&apos;s information to provide marketing services
 				on behalf of SITE and share it with affiliated entities for joint
 				content and service offerings or to market products and services.
 				PROVIDER may sell USER’S information to non-financial organizations,
@@ -547,7 +547,7 @@ const privacyPolicyInfo = [
 				</ul>
 				<br />
 				To stop receiving promotional or marketing emails or to opt out of
-				having USER's information sent to third parties for marketing, USER can
+				having USER&apos;s information sent to third parties for marketing, USER can
 				follow the instructions in any promotional email from SITE. Even if USER
 				opts out of promotional emails, USER will still receive transactional
 				messages.
@@ -561,9 +561,9 @@ const privacyPolicyInfo = [
 				Please note that third party vendors, including but not limited to
 				Google, show advertisements for SITE on the internet. Third party
 				vendors, including but not limited to Google, use cookies to serve
-				advertisements based on USER's prior visits to SITE. To opt out of
-				Google's use of cookies and web beacons, USER can visit the Google
-				advertising opt-out page available on Google's website at
+				advertisements based on USER&apos;s prior visits to SITE. To opt out of
+				Google&apos;s use of cookies and web beacons, USER can visit the Google
+				advertising opt-out page available on Google&apos;s website at
 				www.google.com/privacy/ads. SITE may share, sell, or rent USER
 				information collected voluntarily from USER on the SITE with third party
 				vendors, advertising companies, or analytics providers including but not
@@ -573,13 +573,13 @@ const privacyPolicyInfo = [
 				In addition, SITE participates in targeted advertising. SITE allows
 				third-party companies to collect certain information when USER visits
 				SITE to provide measurement services to SITE and target ads to USER.
-				SITE uses this information to serve ads for SITE'S products or services
+				SITE uses this information to serve ads for SITE&apos;S products or services
 				or for the products or services of other companies when USER visits this
 				SITE or other websites. These companies use non-personally identifiable
 				information (e.g., click stream information, browser type, time and
 				date, subject of advertisements clicked or scrolled over, hardware or
 				software information, cookie and session ID) and personally identifiable
-				information (e.g. IP address) during USER's visits to this SITE and
+				information (e.g. IP address) during USER&apos;s visits to this SITE and
 				other websites in order to provide advertisements about goods and
 				services likely to be of greater interest to USER. These parties
 				typically use a cookie, third party web beacon, or other similar
@@ -599,7 +599,7 @@ const privacyPolicyInfo = [
 				Whenever sensitive information (such as credit card data) is collected,
 				that information is encrypted and transmitted in a secure way. USER can
 				verify this by looking for a closed lock icon at the bottom of USER web
-				browser, or looking for "https" at the beginning of the address of the
+				browser, or looking for &quot;https&quot; at the beginning of the address of the
 				web page. PROVIDER is committed to not re-identifying sensitive
 				information collected by SITE.
 				<br />
@@ -681,8 +681,8 @@ const privacyPolicyInfo = [
 			<span>
 				SITE may send USER several service-related emails to the email address
 				given when placing an order. These include a confirmation email with
-				details of USER'S order, a pre-event email reminder about the event to
-				be attended, and a post-event email gathering feedback on the USER'S
+				details of USER&apos;S order, a pre-event email reminder about the event to
+				be attended, and a post-event email gathering feedback on the USER&apos;S
 				experience. When USER places an order, SITE may also add USER to the
 				weekly mailing list to be informed of upcoming events. USER can opt out
 				of these emails at any time by notifying

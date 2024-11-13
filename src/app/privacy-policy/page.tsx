@@ -23,7 +23,13 @@ export const metadata: Metadata = {
 	},
 };
 
-const privacyPolicyInfo = [
+const privacyPolicyInfo: {
+	title: string;
+	txt: JSX.Element | string;
+	topics?: {
+		[x: string]: JSX.Element | string;
+	}[];
+}[] = [
 	{
 		title: 'Introduction',
 		txt: (
@@ -36,8 +42,8 @@ const privacyPolicyInfo = [
 				<br />
 				This privacy policy describes our practices regarding personal and
 				account information that is collected through our Website, located at
-				www.myencoreexperience.com In this policy, "personal and account
-				information" is referring to your name, company name, account
+				www.myencoreexperience.com In this policy, &quot;personal and account
+				information&quot; is referring to your name, company name, account
 				information, address, telephone number, e-mail address, and any other
 				identification which may identify you (i.e.: industry, profession, size
 				of company, past purchase history).
@@ -93,10 +99,11 @@ const privacyPolicyInfo = [
 				so do not give out your account password to anyone.
 				<br />
 				<br />
-				If you choose to subscribe to our newsletter (which you should, it's
-				awesome), we store both your e-mail and home address so that we can send
-				you all kinds of promotional offers. You may unsubscribe at any time by
-				clicking the "unsubscribe" link located at the bottom of every e-mail.
+				If you choose to subscribe to our newsletter (which you should,
+				it&apos;s awesome), we store both your e-mail and home address so that
+				we can send you all kinds of promotional offers. You may unsubscribe at
+				any time by clicking the &quot;unsubscribe&quot; link located at the
+				bottom of every e-mail.
 				<br />
 				<br />
 				When you chat with a representative online, we collect your e-mail
@@ -121,13 +128,13 @@ const privacyPolicyInfo = [
 		title: 'Personal and Account Information',
 		txt: (
 			<span>
-				We use 128-bit encryption technology and Secure Socket Layers ("SSL") in
-				all areas where your personal and account information is required. Our
-				Web site is certified by VeriSign, which verifies that our Web site is
-				authentic and that we use SSL security. To view our VeriSign
-				certificate, click on the image of the closed lock or the solid key at
-				the bottom of your browser window. Our Web site security information
-				will appear.
+				We use 128-bit encryption technology and Secure Socket Layers
+				(&quot;SSL&quot;) in all areas where your personal and account
+				information is required. Our Web site is certified by VeriSign, which
+				verifies that our Web site is authentic and that we use SSL security. To
+				view our VeriSign certificate, click on the image of the closed lock or
+				the solid key at the bottom of your browser window. Our Web site
+				security information will appear.
 				<br />
 				<br />
 				In addition, your personal and account information and transaction
@@ -149,21 +156,21 @@ const privacyPolicyInfo = [
 		title: 'Cookies + Third Party Cookies',
 		txt: (
 			<span>
-				A cookie is a small text file that computer's store for record keeping.
-				Almost every retail website makes use of cookies, as does Encore
-				Tickets. We do not share any information that is stored in cookies with
-				anyone. Our website uses BOTH session and persistent cookies. Session
-				cookies expire once you close the browser, and make it easier to steer
-				through the site. Persistent cookies remain on your hard drive even
-				after you have closed down the browser. We use them to store your e-mail
-				address, which saves you time next time you shop on the site. In
-				addition, persistent cookies help us track and target user interests in
-				order to enhance the shopping experience in the future.
+				A cookie is a small text file that computer&apos;s store for record
+				keeping. Almost every retail website makes use of cookies, as does
+				Encore Tickets. We do not share any information that is stored in
+				cookies with anyone. Our website uses BOTH session and persistent
+				cookies. Session cookies expire once you close the browser, and make it
+				easier to steer through the site. Persistent cookies remain on your hard
+				drive even after you have closed down the browser. We use them to store
+				your e-mail address, which saves you time next time you shop on the
+				site. In addition, persistent cookies help us track and target user
+				interests in order to enhance the shopping experience in the future.
 				<br />
 				<br />
 				Each browser has a different method for persistent cookie removal, all
-				of which are very simple. Please look at the "help" file on your browser
-				for more instruction.
+				of which are very simple. Please look at the &quot;help&quot; file on
+				your browser for more instruction.
 				<br />
 				<br />
 				Our privacy statement does not include any third parties; we do not have
@@ -211,7 +218,7 @@ const privacyPolicyInfo = [
 	},
 	{
 		title: 'Questions/Comments/Concerns/Feedback:',
-		txt: `You can reach us by email concierge@encoretix.com  or you can call us toll-free at 240-690-6136. Please note that messages become our property and, unless you direct otherwise, may be used by us for promotional purposes.`
+		txt: `You can reach us by email concierge@encoretix.com  or you can call us toll-free at 240-690-6136. Please note that messages become our property and, unless you direct otherwise, may be used by us for promotional purposes.`,
 	},
 	{
 		title: 'Changes to This Privacy Policy',
@@ -242,7 +249,7 @@ export default function PrivacyPolicy() {
 								{/* Если есть темы (topics), отображаем их */}
 								{section.topics &&
 									Object.entries(section.topics).map(
-										([topicTitle, topicContent], i) => (
+										([topicTitle, topicContent]: [any, any], i) => (
 											<div key={i} className='mt-8'>
 												<p className='text-base md:text-lg uppercase'>
 													{topicTitle}

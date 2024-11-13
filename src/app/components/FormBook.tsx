@@ -10,7 +10,7 @@ const FormBook = () => {
 			<div className='mx-4 my-8 md:my-10 md:mx-10 md:w-1/2 flex flex-col justify-between'>
 				<div>
 					<Title className='md:text-start'>
-						Exclusive VIP access to the world's most prestigious live events
+						Exclusive VIP access to the world&apos;s most prestigious live events
 					</Title>
 					<Text className='mt-10 md:mt-8 '>
 						For those seeking tickets to an exceptional experience, simply share
