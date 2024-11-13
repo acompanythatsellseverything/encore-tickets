@@ -138,8 +138,8 @@ const Header = () => {
                                     <Link href={link.link} onClick={toggleModal} className='uppercase text-sm md:text-xl' key={i}>{link.label}</Link>
                                 ))}
                                 <div className='flex flex-col gap-14 text-xs'>
-                                    <Link onClick={toggleModal} href={'mailto:info@encoretix.com'} className='underline'>
-                                        info@encoretix.com
+                                    <Link onClick={toggleModal} href={'mailto:concierge@encoretix.com'} className='underline'>
+                                        concierge@encoretix.com
                                     </Link>
                                     <Link onClick={toggleModal} href={'tel:2406906136'} className='underline'>
                                         240-690-6136

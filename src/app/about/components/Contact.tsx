@@ -39,8 +39,8 @@ const Contact = () => {
                             </Link>
                         </div>
                         <Text className='uppercase mt-20'>email</Text>
-                        <Link href={'mailto:info@encoretix.com'} className='underline font-bold mt-5 text-secondary'>
-                            info@encoretix.com
+                        <Link href={'mailto:concierge@encoretix.com'} className='underline font-bold mt-5 text-secondary'>
+                            concierge@encoretix.com
                         </Link>
                         <div className='flex justify-center mt-20'>
                             <button

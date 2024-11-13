@@ -44,7 +44,7 @@ const Directions = () => {
                 transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
                 viewport={{ once: true, amount: 0.05 }}
             >
-                <Subtitle>Directions</Subtitle>
+                {/* <Subtitle>Directions</Subtitle> */}
                 <div className='flex gap-2.5 md:gap-10 flex-wrap mt-8 md:mt-20'>
                     {directionsMockData.map((card, i) => (
                         <div className='w-full h-[200px] md:w-[400px] md:h-96 relative overflow-hidden cursor-pointer' key={i} onClick={() => setIsModalOpen(true)}>

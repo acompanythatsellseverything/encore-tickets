@@ -16,7 +16,7 @@ const CreatingJourneys = () => {
         >
             <Box>
                 <Title>
-                    Creating <br /> Unforgettable Journeys
+                Curating <br /> Unforgettable Experiences
                 </Title>
                 <Text className="text-center mt-7 md:w-2/3 mx-auto">
                     We create personalized, premium experiences for concerts, sports, theater, and festivals,
