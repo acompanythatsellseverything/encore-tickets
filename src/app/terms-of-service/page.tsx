@@ -613,7 +613,7 @@ const privacyPolicyInfo = [
 				<br />
 				<br />
 				If USER feels that PROVIDER is not abiding by this Privacy Policy, USER
-				should contact SITE immediately via telephone at 240-690-6136 or via
+				should contact SITE immediately via telephone at (240) 690.6136 or via
 				email at concierge@encoretix.com
 			</span>
 		),

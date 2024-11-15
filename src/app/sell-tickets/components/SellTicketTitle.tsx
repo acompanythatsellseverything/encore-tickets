@@ -19,7 +19,7 @@ export const SellTicketTitle = () => {
 			</Text>
 			<Text className='text-sm md:text-center'>BY PHONE</Text>
 			<Subtitle className='underline text-start md:text-center'>
-				240-690-6136
+			(240) 690.6136
 			</Subtitle>
 		</div>
 	);

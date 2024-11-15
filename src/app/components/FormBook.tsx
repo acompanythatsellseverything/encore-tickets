@@ -24,7 +24,7 @@ const FormBook = () => {
 				<div className='mt-12 md:mt-0'>
 					<Text className='uppercase text-sm'>by phone</Text>
 					<Text className='font-bold underline mt-6 text-xl md:text-2xl'>
-						240-690-6136
+					(240) 690.6136
 					</Text>
 					<Image
 						src={'/img/main/qr-code.png'}

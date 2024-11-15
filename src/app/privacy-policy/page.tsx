@@ -114,7 +114,7 @@ const privacyPolicyInfo: {
 				If any of your personal information changes, or if you no longer require
 				our services, you can correct or update what is in the system by
 				e-mailing our customer support at concierge@encoretix.com, or calling us
-				at 240-690-6136
+				at (240) 690.6136
 				<br />
 				<br />
 				Please note that that for legal obligations, we retain all personal
@@ -218,7 +218,7 @@ const privacyPolicyInfo: {
 	},
 	{
 		title: 'Questions/Comments/Concerns/Feedback:',
-		txt: `You can reach us by email concierge@encoretix.com  or you can call us toll-free at 240-690-6136. Please note that messages become our property and, unless you direct otherwise, may be used by us for promotional purposes.`,
+		txt: `You can reach us by email concierge@encoretix.com  or you can call us toll-free at (240) 690.6136. Please note that messages become our property and, unless you direct otherwise, may be used by us for promotional purposes.`,
 	},
 	{
 		title: 'Changes to This Privacy Policy',

@@ -35,7 +35,7 @@ const Contact = () => {
                                 </Link>
                             </nav>
                             <Link href={'tel:2406906136'} className='underline font-bold text-secondary'>
-                                240-690-6136
+                                (240) 690.6136
                             </Link>
                         </div>
                         <Text className='uppercase mt-20'>email</Text>

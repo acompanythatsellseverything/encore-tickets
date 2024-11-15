@@ -142,7 +142,7 @@ const Header = () => {
                                         concierge@encoretix.com
                                     </Link>
                                     <Link onClick={toggleModal} href={'tel:2406906136'} className='underline'>
-                                        240-690-6136
+                                    (240) 690.6136
                                     </Link>
                                 </div>
                                 <div className='flex flex-col gap-9 text-xs'>

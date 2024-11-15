@@ -29,7 +29,7 @@ const Footer = () => {
                         concierge@encoretix.com
                         </Link>
                         <Link href={'tel:2406906136'} className='underline w-1/3 md:w-auto'>
-                            240-690-6136
+                        (240) 690.6136
                         </Link>
                         <Link href={'/terms-of-service'} className='w-1/3 md:w-auto'>
                             Terms of services
