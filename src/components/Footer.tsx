@@ -24,7 +24,7 @@ const Footer = () => {
                             <Image src={'/img/icons/x.svg'} width={30} height={30} alt={'X'} />
                         </Link>
                     </nav>
-                    <nav className='flex gap-6 text-xs justify-center flex-wrap md:flex-nowrap'>
+                    <nav className='flex gap-6 text-xs justify-around md:justify-center flex-wrap md:flex-nowrap'>
                         <Link href={'mailto:concierge@encoretix.com'} className='underline w-1/3 md:w-auto'>
                         concierge@encoretix.com
                         </Link>
