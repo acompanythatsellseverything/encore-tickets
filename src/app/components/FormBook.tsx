@@ -21,7 +21,7 @@ const FormBook = () => {
 						provided.
 					</Text>
 				</div>
-				<div className='mt-12 md:mt-0'>
+				<div className='mt-12 md:mt-4'>
 					<Text className='uppercase text-sm'>by phone</Text>
 					<Text className='font-bold underline mt-6 text-xl md:text-2xl'>
 					(240) 690.6136
