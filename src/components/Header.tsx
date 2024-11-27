@@ -73,7 +73,7 @@ const Header = () => {
                                         <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
                                             <Image src={'/img/icons/facebook.svg'} width={24} height={24} alt={'Facebook'} />
                                         </Link>
-                                        <Link href={'#'}>
+                                        <Link href={'https://m.me/encoretix'}>
                                             <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'} />
                                         </Link>
                                         {/*<Link href={'#'}>*/}
@@ -86,7 +86,7 @@ const Header = () => {
                                     {/*<Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>*/}
                                     {/*    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'} />*/}
                                     {/*</Link>*/}
-                                    <Link href={'#'} className={'hidden md:inline-block'}>
+                                    <Link href={'https://m.me/encoretix'} className={'hidden md:inline-block'}>
                                         <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'} />
                                     </Link>
                                     <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
@@ -103,7 +103,7 @@ const Header = () => {
                             }
                         </nav>
                         <Link href={'/'} className='flex-1 flex justify-center'>
-                            <Image src={'/img/icons/big-logo.svg'} alt={'Logo'} width={285} height={72} className={`transition-all h-auto duration-300 ${isScrolled ? 'w-64' : 'w-72 mt-2 '}`} />
+                            <Image src={'/img/icons/encore_experiences.png'} alt={'Logo'} width={285} height={72} className={`transition-all h-auto duration-300 ${isScrolled ? 'w-40' : 'w-44 mt-2 '}`} />
                         </Link>
                         <div className='flex-1 flex justify-end'>
                             <Image
@@ -168,7 +168,7 @@ const Header = () => {
                                     <Link href={'https://www.instagram.com/encoretix/'} target='_blank'>
                                         <Image src={'/img/icons/inst-white.svg'} width={30} height={30} alt={'Instagram'} />
                                     </Link>
-                                    <Link href={'#'}>
+                                    <Link href={'https://x.com/encoretix'}>
                                         <Image src={'/img/icons/x-white.svg'} width={30} height={30} alt={'X'} />
                                     </Link>
                                 </div>

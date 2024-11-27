@@ -24,15 +24,18 @@ const Contact = () => {
                         <Text className='uppercase'>call</Text>
                         <div className='flex flex-col gap-2 mt-5'>
                             <nav className='flex gap-5 w-fit mx-auto text-secondary'>
-                                <Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>
-                                    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>
-                                </Link>
-                                <Link href={'#'}>
+                                {/*<Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>*/}
+                                {/*    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>*/}
+                                {/*</Link>*/}
+                                <Link href={'https://m.me/encoretix'}>
                                     <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'}/>
                                 </Link>
-                                <Link href={'#'}>
-                                    <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
+                                <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
+                                    <Image src={'/img/icons/facebook.svg'} width={24} height={24} alt={'Facebook'} />
                                 </Link>
+                                {/*<Link href={'#'}>*/}
+                                {/*    <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>*/}
+                                {/*</Link>*/}
                             </nav>
                             <Link href={'tel:2406906136'} className='underline font-bold text-secondary'>
                                 (240) 690.6136

@@ -60,7 +60,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
                         {/*<Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>*/}
                         {/*    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>*/}
                         {/*</Link>*/}
-                        <Link href={'#'}>
+                        <Link href={'https://m.me/encoretix'}>
                             <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'}/>
                         </Link>
                         <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
