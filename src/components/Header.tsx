@@ -64,34 +64,39 @@ const Header = () => {
                                 ? 
                                 <>
                                     <div className='flex flex-col gap-2 px-1 pb-2 absolute z-50 bg-beige'>
-                                        <div onClick={() => setIsDropdownOpen(false)}>
+                                        <div onClick={() => setIsDropdownOpen(false)} className='cursor-pointer'>
                                             <Image src={'/img/icons/minus.svg'} width={24} height={24} alt={''}/>
                                         </div>
-                                        <Link href={'#'}>
-                                            <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'} />
+                                        {/*<Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>*/}
+                                        {/*    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'} />*/}
+                                        {/*</Link>*/}
+                                        <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
+                                            <Image src={'/img/icons/facebook.svg'} width={24} height={24} alt={'Facebook'} />
                                         </Link>
                                         <Link href={'#'}>
                                             <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'} />
                                         </Link>
-                                        <Link href={'#'}>
-                                            <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
-                                        </Link>
-                                        
+                                        {/*<Link href={'#'}>*/}
+                                        {/*    <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>*/}
+                                        {/*</Link>*/}
                                     </div>
                                 </>
                                 : 
                                 <>
-                                    <Link href={'#'}>
-                                        <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'} />
-                                    </Link>
+                                    {/*<Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>*/}
+                                    {/*    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'} />*/}
+                                    {/*</Link>*/}
                                     <Link href={'#'} className={'hidden md:inline-block'}>
                                         <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'} />
                                     </Link>
-                                    <Link href={'#'} className={'hidden md:inline-block'}>
-                                        <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
+                                    <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
+                                        <Image src={'/img/icons/facebook.svg'} width={26} height={26} alt={'Facebook'} />
                                     </Link>
+                                    {/*<Link href={'#'} className={'hidden md:inline-block'}>*/}
+                                    {/*    <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>*/}
+                                    {/*</Link>*/}
                                     {innerWidth <= 768 && <div onClick={() => setIsDropdownOpen(true)}>
-                                        <Image src={'/img/icons/plus.svg'} width={24} height={24} alt={''}/>
+                                        <Image src={'/img/icons/plus.svg'} className='cursor-pointer' width={24} height={24} alt={''}/>
                                     </div>}
 
                                 </>
@@ -138,8 +143,8 @@ const Header = () => {
                                     <Link href={link.link} onClick={toggleModal} className='uppercase text-sm md:text-xl' key={i}>{link.label}</Link>
                                 ))}
                                 <div className='flex flex-col gap-14 text-xs'>
-                                    <Link onClick={toggleModal} href={'mailto:concierge@encoretix.com'} className='underline'>
-                                        concierge@encoretix.com
+                                    <Link onClick={toggleModal} href={'mailto:concierge@myencoreexperience.com'} className='underline'>
+                                        concierge@myencoreexperience.com
                                     </Link>
                                     <Link onClick={toggleModal} href={'tel:2406906136'} className='underline'>
                                     (240) 690.6136

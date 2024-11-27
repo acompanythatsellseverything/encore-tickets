@@ -25,8 +25,8 @@ const Footer = () => {
                         </Link>
                     </nav>
                     <nav className='flex gap-6 text-xs justify-around md:justify-center flex-wrap md:flex-nowrap'>
-                        <Link href={'mailto:concierge@encoretix.com'} className='underline w-1/3 md:w-auto'>
-                        concierge@encoretix.com
+                        <Link href={'mailto:concierge@myencoreexperience.com'} className='underline w-1/3 md:w-auto'>
+                            concierge@myencoreexperience.com
                         </Link>
                         <Link href={'tel:2406906136'} className='underline w-1/3 md:w-auto'>
                         (240) 690.6136

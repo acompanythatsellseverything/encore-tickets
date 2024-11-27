@@ -57,15 +57,18 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
                     (240) 690.6136
                     </Link>
                     <nav className='flex gap-5 w-fit text-secondary'>
-                        <Link href={'#'}>
-                            <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>
-                        </Link>
+                        {/*<Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>*/}
+                        {/*    <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>*/}
+                        {/*</Link>*/}
                         <Link href={'#'}>
                             <Image src={'/img/icons/messenger.svg'} width={24} height={24} alt={'Messenger'}/>
                         </Link>
-                        <Link href={'#'}>
-                            <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>
+                        <Link href={'https://www.facebook.com/Encoretix'}  target='_blank'>
+                            <Image src={'/img/icons/facebook.svg'} width={26} height={26} alt={'Facebook'} />
                         </Link>
+                        {/*<Link href={'#'}>*/}
+                        {/*    <Image src={'/img/icons/telegram.svg'} width={24} height={24} alt={'Telegram'}/>*/}
+                        {/*</Link>*/}
                     </nav>
                 </div>
                 <Image src={'/img/main/qr-code.png'} alt='Qr code' width={284} height={45} className='mt-12 mx-auto'/>

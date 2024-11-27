@@ -24,7 +24,7 @@ const Contact = () => {
                         <Text className='uppercase'>call</Text>
                         <div className='flex flex-col gap-2 mt-5'>
                             <nav className='flex gap-5 w-fit mx-auto text-secondary'>
-                                <Link href={'#'}>
+                                <Link href={'https://api.whatsapp.com/send/?phone=2406906136'}>
                                     <Image src={'/img/icons/whatsapp.svg'} width={24} height={24} alt={'Whatsapp'}/>
                                 </Link>
                                 <Link href={'#'}>
@@ -39,8 +39,8 @@ const Contact = () => {
                             </Link>
                         </div>
                         <Text className='uppercase mt-20'>email</Text>
-                        <Link href={'mailto:concierge@encoretix.com'} className='underline font-bold mt-5 text-secondary'>
-                            concierge@encoretix.com
+                        <Link href={'mailto:concierge@myencoreexperience.com'} className='underline font-bold mt-5 text-secondary'>
+                            concierge@myencoreexperience.com
                         </Link>
                         <div className='flex justify-center mt-20'>
                             <button

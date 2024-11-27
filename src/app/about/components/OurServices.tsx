@@ -4,38 +4,42 @@ import Subtitle from "@/components/Subtitle";
 import Image from "next/image";
 import Box from "@/components/Box";
 import { motion } from 'framer-motion';
+import Link from "next/link";
 
 interface IService {
     icon: string
     title: string | JSX.Element
-    txt: string
+    txt: string | JSX.Element
 }
 
 const services: IService[] = [
     {
-        icon: '/img/about/icons/alarm.svg',
-        title: <>VIP Concierge<br className='hidden md:block'/> Services</>,
-        txt: 'Our VIP concierge services offer tailored support for travel, luxury accommodations, fine dining, and special requests, ensuring a seamless experience.'
-    },
-    {
         icon: '/img/about/icons/vip.svg',
-        title: <>Customized Event<br className='hidden md:block'/> Packages</>,
-        txt: 'We create custom packages with event tickets and exclusive perks like backstage passes, meet-and-greets, and VIP receptions.'
-    },
-    {
-        icon: '/img/about/icons/access.svg',
-        title: <>Access to Invitation-<br className='hidden md:block'/>Only Events</>,
-        txt: 'Provide clients with invites to exclusive, members-only events like private parties, charity galas, and fashion shows not open to the public.'
-    },{
-        icon: '/img/about/icons/booking.svg',
-        title: <>Last-Minute<br className='hidden md:block'/> Booking Services</>,
-        txt: 'Offer the ability to secure tickets and arrangements on short notice, leveraging industry connections to provide access even to sold-out events.'
+        title: <>Exclusive Event<br className='hidden md:block'/> Packages</>,
+        txt: 'We curate personalized event packages with exclusive perks like VIP receptions, meet-and-greets, and premium accommodations.'
     },
     {
         icon: '/img/about/icons/ticket.svg',
-        title: <>Ticket Buying and<br className='hidden md:block'/> Selling Services</>,
-        txt: 'Facilitate effortless ticket purchases and resales for all events, ensuring secure transactions and access to high-demand options.'
+        title: <>Buy and Sell<br className='hidden md:block'/> Tickets</>,
+        txt: 'Effortlessly facilitate ticket purchases or discreetly and confidently resell tickets if you can no longer attend the event. Enjoy the peace of mind that comes with our commitment to quality and authenticity.'
     },
+    {
+        icon: '/img/about/icons/alarm.svg',
+        title: <>Exclusive VIP <br className='hidden md:block'/>Benefits</>,
+        txt: 'Gain access to exclusive perks such as fine dining reservations, luxury transportation, and complimentary upgrades ensuring a luxurious experience.'
+    },
+    {
+        icon: '/img/about/icons/access.svg',
+        title: <>Travel <br className='hidden md:block'/>Concierge</>,
+        txt: (<>
+            Our sister company, <Link href='https://www.beroexperiences.com/' className='font-semibold'>Bero Experiences</Link>, redefines luxury travel by offering bespoke, custom-tailored trip planning services. We handle every aspect from flights and hotel accommodations to personalized experience itineraries that guarantee a seamless and stress-free experience..
+        </>)
+    },{
+        icon: '/img/about/icons/booking.svg',
+        title: <>Last-Minute<br className='hidden md:block'/> Booking Services</>,
+        txt: 'We leverage our exclusive global network to effortlessly secure access to events tickets. Whether you need tickets at the last-minute or access to a sold-out event, our concierge team is at your service.'
+    },
+
 
 ]
 
