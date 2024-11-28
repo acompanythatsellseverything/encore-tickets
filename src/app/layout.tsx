@@ -30,8 +30,6 @@ export default function RootLayout({
     <head>
         <link rel="icon" href="/favicon.png" sizes="any" type="image/png"/>
         <link rel="icon" href="/favicon-big.ico" sizes="512x512"/>
-
-        <script src="//code.tidio.co/lu6cigzk5m2anspiwcytnd8zthsifbiu.js" async></script>
     </head>
     <body className={inter.className + ' flex flex-col relative'}>
     <Header/>
